@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Marine_Park_wgs84",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "FID_": 0, "Entity": "Complex Shape", "Level": 1, "Layer": "Level 1", "Color": 8, "Linetype": "Medium-Dashed", "Elevation": 0.0, "LineWt": 3, "RefName": "The Brothers Marine Park" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 113.963523558314876, 22.336848217566637 ], [ 113.978096244827015, 22.341355615646023 ], [ 113.985615182591829, 22.341406980937617 ], [ 113.999543810529516, 22.336906976822998 ], [ 113.999560898204081, 22.323384701855453 ], [ 113.980958884111573, 22.309933843532956 ], [ 113.963626430505741, 22.317221527295008 ], [ 113.963523558314876, 22.336848217566637 ] ] ] ] } }
+]
+}

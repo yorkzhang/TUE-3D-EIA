@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Leq_day_nomit",
+      "text": "Leq (day)",
+      "source": "EIA_Unmit_Leqday_wgs84.geojson"
+    },
+    {
+        "name": "Leq_night_nomit",
+        "text": "Leq (night)",
+        "source": "EIA_Unmit_Leqnight_wgs84.geojson"
+    },
+    {
+        "name": "Lmax_nomit",
+        "text": "LMax",
+        "source": "EIA_Unmit_Lmax_wgs84.geojson"
+    },
+    {
+        "name": "Leq_day_mit",
+        "text": "Leq (day)",
+        "source": "EIA_Mit_Leqday_wgs84.geojson"
+      },
+      {
+          "name": "Leq_night_mit",
+          "text": "Leq (night)",
+          "source": "EIA_Mit_Leqnight_wgs84.geojson"
+      },
+      {
+          "name": "Lmax_mit",
+          "text": "LMax",
+          "source": "EIA_Mit_Lmax_wgs84.geojson"
+      }
+]

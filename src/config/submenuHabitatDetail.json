@@ -1,0 +1,72 @@
+[
+    {
+        "Name" : "agricultural land",
+        "Species" : "Within Project Site<ul> <li>N/A</li></ul>Within 500m Assessment Area<br />Fauna:<ul><li>Greater Coucal <i>Centropus sinensis</i></li><li>Hainan Palm Dart <i>Telicota besta besta</i></li><li>Romer’s Tree Frog <i>Liuixalus romeri</i></li><li>Chinese Bullfrog <i>Hoplobatrachus rugulosus</i></li></ul>",
+        "Ecological" : "Low"
+    },
+    {
+        "Name" : "coastal waters",
+        "Species" : "Within Project Site<ul><li>N/A</li></ul>Within 500m Assessment Area<br />Fauna:<ul><li>Black-crowned Night Heron <i>Nycticorax nycticorax</i></li><li>Great Egret <i>Ardea alba</i></li><li>Little Egret <i>Egretta garzetta </i></li><li>Pacific Reef Heron <i>Egretta sacra</i></li><li>Black Kite <i>Milvus migrans</i></li><li>White-throated Kingfisher <i>Halcyon smyrnensis</i></li></ul>",
+        "Ecological" : "High (Tung Chung Bay)<br />Low (coastal waters in TCE)"
+    },
+    {
+        "Name" : "fung shui wood",
+        "Species" : "Within Project Site<ul><li>N/A</li></ul>Within 500m Assessment Area<br />Flora:<ul><li><i>Aquilaria sinensis</i></li><li><i>Pavetta hongkongensis</i></li></ul>Fauna:<ul><li>Crested Goshawk <i>Accipiter trivirgatus</i></li><li>Greater Coucal <i>Centropus sinensis</i></li><li>Tokay Gecko <i>Gekko gecko</i></li></ul>",
+        "Ecological" : "High (Sheung Ling Pei)<br />Medium (others)"
+    },
+    {
+        "Name" : "mangrove",
+        "Species" : "Within Project Site<ul><li>N/A</li></ul>Within 500m Assessment Area<br />Flora:<ul><li><i>Ligustrum punctifolium</i></li></ul>Fauna:<ul><li>Black-crowned Night Heron <i>Nycticorax nycticorax</i></li><li>Eastern Cattle Egret <i>Bubulcus coromandus</i></li><li>Little Egret <i>Egretta garzetta </i></li><li>Greater Coucal <i>Centropus sinensis</i></li><li>Collared Crow <i>Corvus torquatus</i></li><li>Mangrove Skimmer <i>Orthetrum poecilops</i></li></ul>",
+        "Ecological" : "Medium to High"
+    },
+    {
+        "Name" : "mudflat",
+        "Species" : "Within Project Site<ul><li>N/A</li></ul>Within 500m Assessment Area<br />Fauna:<ul><li>Great Egret <i>Ardea alba</i></li><li>Intermediate Egret <i>Egretta intermedia </i></li><li>Little Egret <i>Egretta garzetta</i></li><li>Pacific Reef Heron <i>Egretta sacra</i></li><li>Black-crowned Night Heron <i>Nycticorax nycticorax </i></li><li>Banded Awl <i>Hasora chromus chromus</i></li><li>Blue Mudhopper <i>Scartelaos histophorus</i></li><li><i>Carcinoscorpius rotundicauda</i></li></ul>",
+        "Ecological" : "High"
+    },
+    {
+        "Name" : "orchard",
+        "Species" : "Within Project Site<ul><li>N/A</li></ul>Within 500m Assessment Area<br />Fauna:<ul><li>Little Egret <i>Egretta garzetta</i></li><li>Crested Serpent Eagle <i>Spilornis cheela</i></li><li>Greater Coucal <i>Centropus sinensis</i></li><li>Black Kite <i>Milvus migrans</i></li><li>Eurasian Eagle Owl <i>Bubo bubo</i></li><li>Emerald Cascader <i>Zygonyx iris</i></li><li>Mangrove Skimmer <i>Orthetrum poecilops</i></li><li>Chinese Bullfrog <i>Hoplobatrachus rugulosus</i></li><li>Romer’s Tree Frog <i>Liuixalus romeri</i></li></ul>",
+        "Ecological" : "Low"
+    },
+    {
+        "Name" : "plantation",
+        "Species" : "Within Project Site (aboveground works site)<br />Flora:<ul><li><i>Aquilaria sinensis</i></li><li><i>Canthium dicoccum</i></li></ul>Within Project Site (underground works site)<br />Flora:<ul><li><i>Brainea insignis</i></li></ul>Within 500m Assessment Area<br />Flora:<ul><li><i>Aquilaria sinensis</i></li><li><i>Canthium dicoccum</i></li></ul>Fauna:<ul><li>Greater Coucal <i>Centropus sinensis</i></li><li>Plain Palm Dart <i>Cephrenes acalle</i></li><li>Banded Awl <i>Hasora chromus chromus</i></li></ul>",
+        "Ecological" : "Low"
+    },
+    {
+        "Name" : "rocky shore",
+        "Species" : "-",
+        "Ecological" : "Low (both intertidal and subtidal)"
+    },
+    {
+        "Name" : "disturbed/wasteland",
+        "Species" : "Within Project Site (aboveground works site)<br />Fauna:<ul><li>Tiny Grass Blue <i>Zizula hylax</i></li></ul>Within 500m Assessment Area<br />Fauna:<ul><li>Eastern Cattle Egret <i>Bubulcus coromandus</i></li><li>Greater Coucal <i>Centropus sinensis</i></li><li>Japanese Pipistrelle <i>Pipistrellus abramus</i></li><li>Common Dart <i>Potanthus pseudomaesa clio</i></li><li>Forget-me-not <i>Catochrysops strabo strabo</i></li><li>Grass Jewel <i>Freyeria putli</i></li><li>Tiny Grass Blue <i>Zizula hylax</i></li></ul>",
+        "Ecological" : "Low"
+    },
+    {
+        "Name" : "sandy shore",
+        "Species" : "-",
+        "Ecological" : "Low"
+    },
+    {
+        "Name" : "shrubland/grassland",
+        "Species" : "Within Project Site (underground works site)<br />Flora:<ul><li><i>Dalbergia assamica</i></li><li><i>Berchemia lineata </i></li></ul>Within 500m Assessment Area<br />Flora:<ul><li><i>Aquilaria sinensis</i></li><li><i>Gmelina chinensis</i></li></ul>Fauna:<ul><li>Swallowtail <i>Papilio xuthus</i></li></ul>",
+        "Ecological" : "Low"
+    },
+    {
+        "Name" : "developed area",
+        "Species" : "Within Project Site (aboveground works site)<br />Fauna:<ul><li>Tiny Grass Blue <i>Zizula hylax</i></li><li>Rounded 6-line Blue <i>Nacaduba berenice</i></li></ul>Within 500m Assessment Area<br />Flora:<ul><li><i>Canthium dicoccum</i></li><li><i>Gmelina chinensis</i></li><li><i>Wahlenbergia marginata</i></li></ul>Fauna:<ul><li>Black-crowned Night Heron <i>Nycticorax nycticorax </i></li><li>Black Kite <i>Milvus migrans</i></li><li>Burmese Python <i>Python bivittatus</i></li><li>Common Rat Snake <i>Ptyas mucosus</i></li><li>Tokay Gecko <i>Gekko gecko</i></li><li>Plain Palm Dart <i>Cephrenes acalle</i></li><li>Common Awl <i>Hasora badra badra</i></li><li>Tiny Grass Blue <i>Zizula hylax</i></li><li>Forget-me-not <i>Catochrysops strabo Strabo</i></li><li>Malayan Megisba <i>Malaya sikkima</i></li></ul>",
+        "Ecological" : "Low"
+    },
+    {
+        "Name" : "watercourse",
+        "Species" : "Within Project Site (aboveground works site)<br />Fauna:<ul><li>Great Egret <i>Ardea alba</i></li></ul>Within Project Site (underground works site)<br />Fauna:<ul><li>Little Egret <i>Egretta garzetta</i></li><li>Black-crowned Night Heron <i>Nycticorax nycticorax</i></li></ul>Within 500m Assessment Area<br />Fauna: <ul><li>Unknown bat species</li><li>Chinese Pond Heron <i>Ardeola bacchus</i></li><li>Little Egret <i>Egretta garzetta</i></li><li>Black-crowned Night Heron <i>Nycticorax nycticorax</i></li><li>Great Egret <i>Ardea alba</i></li><li>Black Kite <i>Milvus migrans</i></li><li>Chinese Bullfrog <i>Hoplobatrachus rugulosus</i></li><li>Tiny Grass Blue <i>Zizula hylax</i></li><li>Danaid Eggfly <i>Hypolimnas misippus</i></li><li>Orange-backed Threadtail <i>Prodasineura croconota</i></li><li>Ruby Darter <i>Rhodothemis rufa</i></li><li><i>Acrossocheilus beijiangensis </i></li><li>Hainan Medaka <i>Oryzias curvinotus</i></li><li><i>Parazacco spilurus</i></li></ul>",
+        "Ecological" : "High (natural section)<br />Low to Medium (channelized section)"
+    },
+    {
+        "Name" : "woodland",
+        "Species" : "Within Project Site (underground works site)<br />Flora:<ul><li><i>Pavetta hongkongensis</i></li></ul>Within 500m Assessment Area<br />Flora:<ul><li><i>Aquilaria sinensis</i></li><li><i>Canthium dicoccum </i></li><li><i>Diospyros vacciniodes</i></li><li><i>Gmelina chinensis</i></li></ul>Fauna: <ul><li>Chinese Pond Heron <i>Ardeola bacchus</i></li><li>Black Kite <i>Milvus migrans</i></li><li>Slaty-legged Crake <i>Gallirallus striatus</i></li><li>Greater Coucal <i>Centropus sinensis</i></li><li>Chinese Hwamei <i>Garrulax canorus </i></li><li>Common Awl <i>Hasora badra badra</i></li><li>Common Cerulean <i>Jamides celeno celeno</i></li><li>Tiny Grass Blue <i>Zizula hylax</i></li><li>Romer’s Tree Frog <i>iuixalus romeri</i></li></ul>",
+        "Ecological" : "Medium"
+    }
+]

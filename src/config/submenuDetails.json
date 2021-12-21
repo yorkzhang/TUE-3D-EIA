@@ -1,0 +1,173 @@
+[
+    {
+        "key": "2-1",
+        "Name" : "Avoidance of Marine Works",
+        "Detail": [
+            "Adopt flat top barge arrangement to avoid dredging and marine works for the setting up of the barging point",
+            "Adopt Tunnel Boring Machine (TBM) tunnelling at Ma Wan Chung to avoid any marine works",
+            "Avoid direct impacts on the important marine/ intertidal ecological resources in the vicinity such as Tung Chung River and Ma Wan Chung"
+        ],
+        "Images": []
+    },
+    {
+        "key": "2-2",
+        "Name" : "Avoidance of Works within / Direct Impact upon Tung Chung River and its Estuary, and Tai Ho Wan",
+        "Detail": [
+            "Avoid marine works in the current design",
+            "Avoid direct impacts to ecologically important areas such as Tung Chung River and Tai Ho Wan"
+        ],
+        "Images": []
+    },
+    {
+        "key": "2-3",
+        "Name" : "Avoidance of Works within Intertidal Zone",
+        "Detail": [
+            "Allow a setback from the coastline of Tung Chung Bay in the current design",
+            "Limit construction works beyond the tidal influence zone and above the high-water mark at the abandoned drainage channel at the west of Yat Tung Estate",
+            "Avoid direct impacts to the intertidal zone in Tung Chung Bay and Wong Lung Hang estuary"
+        ],
+        "Images": []
+    },
+    {
+        "key": "2-4",
+        "Name" : "Avoidance of Works within Country Parks, Site of Special Scientific Interest (SSSI), Conservation Area (CA) and Costal Protection Area (CPA)",
+        "Detail": [
+            "Strategically locate the above-ground structures at areas of low ecological values",
+            "Avoid any impacts to Lantau North (Extension) Country Park, Tai Ho Stream SSSI, Tai Ho Priority Site, CA and CPA "
+        ],
+        "Images": []
+    },
+    {
+        "key": "2-5",
+        "Name" : "Avoidance of Works within Secondary Woodland",
+        "Detail": [
+            "Strategically relocate the EAP/ EEP to an artificial slope consisting of plantation of low ecological value at Shun Tung Road",
+            "Avoid or minimize loss of secondary woodland"
+        ],
+        "Images": []
+    },
+    {
+        "key": "2-6",
+        "Name" : "Avoidance of Re-diversion of Wong Lung Hang Nullah",
+        "Detail": [
+            "Avoid any re-diversion of the Wong Lung Hang nullah due to the overrun tunnel",
+            "Avoid any direct impacts on the Wong Lung Hang estuary"
+        ],
+        "Images": []
+    },
+    {
+        "key": "2-7",
+        "Name" : "Minimisation of Surface Runoff and Provision of Necessary<br />Treatment Facilities",
+        "Detail": [
+            "Adopt special enhancement measure such as sheet piles or hoarding with concrete footing along the western boundary of the construction site/works areas for TCW Station",
+            "Minimise any untreated surface runoff into the Tung Chung River estuary and the Wong Lung Hang estuary"
+        ],
+        "Images": []
+    },
+    {
+        "key": "2-8",
+        "Name" : "Minimisation of Noise Disturbance during Construction",
+        "Detail": [
+            "Adopt noise mitigation measures such as use of Quality Powered Mechanical Equipment (QPME), noise enclosure at TBM launching shaft/ retrieval shaft and screen cover at EAP/ EEP during construction phase",
+            "Adopt temporary movable noise enclosures for the D-wall construction of TCW Station",
+            "Minimise construction noise impacts to large water birds at Tung Chung River and Wong Lung Hang as well as many Noise Sensitive Receivers (NSRs) in close proximity"
+        ],
+        "Images": []        
+    },
+    {
+        "key": "2-9",
+        "Name" : "Minimisation of Air Quality Impact during Construction",
+        "Detail": [
+            "Adopt mitigation measures for fugitive dust such as regular spray, exposed earth surface covered by tarpaulins, standard wheel washing facilities at the construction site exits, vehicle washing at the exit of the barging facility with the provision of vehicle washing facilities",
+            "Provision of 3-side with top cover and spraying system at unloading points at the barging facility",
+            "Blasting to be carried out in a fully enclosed environment",
+            "Avoid using exempted Non-Road Mobile Machinery (NRMM) where practicable",
+            "Use power supplied from power utilities when practicable"
+        ],
+        "Images": [
+            
+        ]
+    },
+    {
+        "key": "2-10",
+        "part": "1",
+        "Name" : "Minimisation of Human Disturbance during Construction",
+        "Detail": [
+            "Install site hoarding of appropriate height along site boundaries during construction phase",
+            "Confine construction activities and material storage within the construction sites",
+            "Do not provide dedicated access to the nearby ecological sensitive areas outside the construction sites",
+            "Minimise unnecessary human access and disturbance to nearby areas as far as practicable"
+        ],
+        "Images": []        
+    },
+    {
+        "key": "2-11",
+        "Name" : "Minimisation of Potential Off-site Habitat Degradation",
+        "Detail": [
+            "Prohibit illegal dumping and landfilling of materials on ecological sensitive areas in Tung Chung Valley and South Lantau"
+        ],
+        "Images": []        
+    },    
+    {
+        "key": "2-12",
+        "Name" : "Protection Zone for Flora of Conservation Importance",
+        "Detail": [
+            "Set up protection zones for one individual of <i>Canthium dicoccum</i> recorded on the plantation slope along Shun Tung Road near the proposed EAP/EEP and one individual of <i>Aquilaria sinensis</i> recorded in the works site along Shun Tung Road to avoid disturbance"
+        ],
+        "Images": []        
+    },
+    {
+        "key": "3-1",
+        "Name" : "Ecological Outcomes",
+        "Detail": [
+            "No permanent loss of important habitat",
+            "Residual impacts of such permanent loss: negligible."
+        ],
+        "Images": []        
+    },
+    {
+        "key": "3-2",
+        "Name" : "Ecological Outcomes",
+        "Detail": [
+            "No permanent loss of important habitat",
+            "No direct impact to the identified flora species of conservation importance",
+            "Direct impact to butterfly species of conservation importance: minor",
+            "Residual impacts of permanent loss of habitat: minor"
+        ],
+        "Images": []        
+    },
+    {
+        "key": "PD4-1",
+        "Name" : "PV Panels",
+        "Detail": [
+            "Reduce electricity consumption",
+            "Renewable energy source",
+            "Sustainable building design"
+        ],
+        "Images": []        
+    },
+    {
+        "key": "PD4-2",
+        "Name" : "Solar Tubes",
+        "Detail": [
+            "Reduce the need for artificial lighting by light provision by natural light"
+        ],
+        "Images": []        
+    },
+    {
+        "key": "PD4-3",
+        "Name" : "Rainwater Harvesting",
+        "Detail": [
+            "Reduce freshwater irrigation demand through recycled rainwater"
+        ],
+        "Images": []        
+    },
+    {
+        "key": "PD4-4",
+        "Name" : "Visual Enhancement",
+        "Detail": [
+            "Provide opportunity for the public to enjoy the view of the Tung Chung Bay Area"
+        ],
+        "Images": []        
+    }
+]

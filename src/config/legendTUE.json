@@ -1,0 +1,667 @@
+[
+    {
+        "id": "1",
+        "name": "Survey Locations",
+        "legend": [
+            {
+                "title" : "Terrestrial Transect",
+                "type" : "line",
+                "color" : "FF33CC"
+            },
+            {
+                "title" : "Intertidal Transect",
+                "type" : "line",
+                "color" : "7ECCED"
+            },
+            {
+                "title" : "Stream Sampling Point",
+                "type" : "point",
+                "color" : "00FF00"
+            },
+            {
+                "title" : "Benthic Sampling Point",
+                "type" : "point",
+                "color" : "00B0F0"
+            },
+            {
+                "title" : "Dive Survey",
+                "type" : "polygonStripe",
+                "color" : "FA9B1E"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Habitat Map",
+        "legend": [
+            {
+                "title" : "Agricultural Land",
+                "type" : "polygon",
+                "color" : "FCAE1E"
+            },
+            {
+                "title" : "Coastal Waters",
+                "type" : "polygon",
+                "color" : "58CCED"
+            },
+            {
+                "title" : "Fung Shui Wood",
+                "type" : "polygon",
+                "color" : "1E5631"
+            },
+            {
+                "title" : "Mangrove",
+                "type" : "polygon",
+                "color" : "D0312D"
+            },
+            {
+                "title" : "Mudflat",
+                "type" : "polygon",
+                "color" : "5C2C06"
+            },
+            {
+                "title" : "Orchard",
+                "type" : "polygon",
+                "color" : "A03CAE"
+            },
+            {
+                "title" : "Plantation",
+                "type" : "polygon",
+                "color" : "ACDF87"
+            },
+            {
+                "title" : "Rocky Shore",
+                "type" : "polygon",
+                "color" : "FFF4C2"
+            },
+            {
+                "title" : "Disturbed/Wasteland",
+                "type" : "polygon",
+                "color" : "DEDEDE"
+            },
+            {
+                "title" : "Sandy Shore",
+                "type" : "polygon",
+                "color" : "CC9966"
+            },
+            {
+                "title" : "Shrubland/Grassland",
+                "type" : "polygon",
+                "color" : "EFFD5F"
+            },
+            {
+                "title" : "Developed Area",
+                "type" : "polygon",
+                "color" : "A9A9A9"
+            },
+            {
+                "title" : "Watercourse",
+                "type" : "polygon",
+                "color" : "1261A0"
+            },
+            {
+                "title" : "Woodland",
+                "type" : "polygon",
+                "color" : "4FA64F"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Recognised Sites of Conservation Importance",
+        "legend": [
+            {
+                "title" : "Country Park",
+                "type" : "polygon",
+                "color" : "00FF00"
+            },
+            {
+                "title" : "Wong Lung Hang, Lantau / Tung Chung (Mok Ka and Shek Mun Kap) EIS",
+                "type" : "line",
+                "color" : "1261A0"
+            },
+            {
+                "title" : "Priority Site under New Conservation Policy",
+                "type" : "polygon",
+                "color" : "FF6600"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Assessment Area",
+        "legend": [
+            {
+                "title" : "500m Assessment Area",
+                "type" : "line",
+                "color" : "E81015"
+            }
+        ]
+    },
+    {
+        "id": "5a",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Mangrove",
+                "type" : "polygon",
+                "color" : "D0312D"
+            }
+            ,
+            {
+                "title" : "Mudflat",
+                "type" : "polygon",
+                "color" : "5C2C06"
+            }
+            ,
+            {
+                "title" : "Tung Chung River",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            }
+        ]
+    },
+    {
+        "id": "5b",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Mangrove",
+                "type" : "polygon",
+                "color" : "D0312D"
+            }
+            ,
+            {
+                "title" : "Mudflat",
+                "type" : "polygon",
+                "color" : "5C2C06"
+            }
+            ,
+            {
+                "title" : "Tung Chung River",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            },
+            {
+                "title" : "Tai Ho Wan",
+                "type" : "polygon",
+                "color" : "FF6600"
+            }
+        ]
+    },
+    {
+        "id": "5c",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Mangrove",
+                "type" : "polygon",
+                "color" : "D0312D"
+            }
+            ,
+            {
+                "title" : "Mudflat",
+                "type" : "polygon",
+                "color" : "5C2C06"
+            }
+            ,
+            {
+                "title" : "Wong Lung Hang Nullah",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            }
+        ]
+    },
+    {
+        "id": "5d",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Country Park (CP)",
+                "type" : "polygon",
+                "color" : "00FF00"
+            }
+            ,
+            {
+                "title" : "Coastal Protection Area (CPA)",
+                "type" : "polygon",
+                "color" : "996633"
+            }
+            ,
+            {
+                "title" : "Conservation Area (CA)",
+                "type" : "polygon",
+                "color" : "FFFF00"
+            },
+            {
+                "title" : "Site of Special Scientific Interests (SSSI)",
+                "type" : "polygonoutline",
+                "color" : "6666FF"
+            }
+        ]
+    },
+    {
+        "id": "5e",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Woodland",
+                "type" : "polygon",
+                "color" : "4FA64F"
+            }
+            ,
+            {
+                "title" : "Plantation",
+                "type" : "polygon",
+                "color" : "ACDF87"
+            }
+        ]
+    },
+    {
+        "id": "5f",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Mangrove",
+                "type" : "polygon",
+                "color" : "D0312D"
+            }
+            ,
+            {
+                "title" : "Mudflat",
+                "type" : "polygon",
+                "color" : "5C2C06"
+            },
+            {
+                "title" : "Wong Lung Hang Nullah",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            }
+        ]
+    },
+    {
+        "id": "5g",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Mangrove",
+                "type" : "polygon",
+                "color" : "D0312D"
+            }
+            ,
+            {
+                "title" : "Mudflat",
+                "type" : "polygon",
+                "color" : "5C2C06"
+            }
+            ,
+            {
+                "title" : "Tung Chung River",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            },
+            {
+                "title" : "Wong Lung Hang Nullah",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            }
+        ]
+    },
+    {
+        "id": "5h",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            }
+            ,
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Mudflat",
+                "type" : "polygon",
+                "color" : "5C2C06"
+            }
+            ,
+            {
+                "title" : "Tung Chung River",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            },
+            {
+                "title" : "Wong Lung Hang Nullah",
+                "type" : "polygon",
+                "color" : "00B0F0"
+            }
+        ]
+    },
+    {
+        "id": "5i",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            },
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            }
+        ]
+    },
+    {
+        "id": "5j",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            },
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            }
+        ]
+    },
+    {
+        "id": "5k",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            },
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            }
+        ]
+    },
+    {
+        "id": "5l",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0018F9"
+            }
+            ,
+            {
+                "title" : "Works site and works area",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            },
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Plantation",
+                "type" : "polygon",
+                "color" : "ACDF87"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Alignment",
+                "type" : "line",
+                "color" : "FF9551"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Alignments",
+        "legend": [
+            {
+                "title" : "Alignment",
+                "type" : "line",
+                "color" : "FF9551"
+            },
+            {
+                "title" : "Tunnel Alignment",
+                "type" : "lineStripe",
+                "color" : "FF9551"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Construction Programme 2023",
+        "legend": [
+            {
+                "title" : "Works Site and Work Areas",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            },
+            {
+                "title" : "Emergency Access Point / Emergency Egress Point",
+                "type" : "polygonoutline",
+                "color" : "0070FF"
+            },
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Construction Programme 2027",
+        "legend": [
+            {
+                "title" : "Works Site and Work Areas",
+                "type" : "polygonoutline",
+                "color" : "FFFF00"
+            },
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Construction Programme 2029",
+        "legend": [
+            {
+                "title" : "Barging Facility",
+                "type" : "polygonoutline",
+                "color" : "FF00C5"
+            },
+            {
+                "title" : "Alignment",
+                "type" : "line",
+                "color" : "FF9551"
+            },
+            {
+                "title" : "Tunnel Alignment",
+                "type" : "lineStripe",
+                "color" : "FF9551"
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Airborne Noise",
+        "legend": [
+            {
+                "title" : "Exceeded the criteria",
+                "type" : "point",
+                "color" : "993300"
+            },
+            {
+                "title" : "Comply with the criteria",
+                "type" : "point",
+                "color" : "0099FF"
+            },
+            {
+                "title" : "Well below the criteria (>= 5 db(A) lower than the criteria)",
+                "type" : "point",
+                "color" : "A9D08E"
+            }
+        ]
+    }
+]

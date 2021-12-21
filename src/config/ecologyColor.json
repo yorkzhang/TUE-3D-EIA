@@ -1,0 +1,408 @@
+[
+    {
+      "name": "terrestrial transect",
+      "color": "#FF33CC",
+      "text": "Terrestrial Transect",
+      "type": "line",
+      "source": "Sampling_Location_wgs84.geojson",
+      "group": "sub1point1",
+      "imageUrl": ""
+    },
+    {
+      "name": "intertidal transect",
+      "color": "#7ECCED",
+      "text": "Intertidal Transect",
+      "type": "line",
+      "source": "Sampling_Location_wgs84.geojson",
+      "group": "sub1point1",
+      "imageUrl": ""
+    },
+    {
+      "name": "stream sampling point",
+      "color": "#00FF00",
+      "text": "Stream Sampling Point",
+      "type": "point",
+      "source": "Stream_Sampling_Point_wgs84.geojson",
+      "group": "sub1point1",
+      "imageUrl": ""
+    },
+    {
+      "name": "benthic sampling point",
+      "color": "#00B0F0",
+      "text": "Benthic Sampling Point",
+      "type": "point",
+      "source": "Stream_Sampling_Point_wgs84.geojson",
+      "group": "sub1point1",
+      "imageUrl": ""
+    },
+    {
+      "name": "dive survey",
+      "color": "#FA9B1E",
+      "text": "Dive Survey",
+      "type": "polygon",
+      "source": "Dive_survey_area_wgs84.geojson",
+      "group": "sub1point1",
+      "imageUrl": ""
+    },
+    {
+      "name": "agricultural land",
+      "color": "#FCAE1E",
+      "text": "Agricultural Land",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/agriculturalland.jpg"
+    },
+    {
+      "name": "coastal waters",
+      "color": "#58CCED",
+      "text": "Coastal Waters",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/coastalwaters.jpg"
+    },
+    {
+      "name": "fung shui wood",
+      "color": "#1E5631",
+      "text": "Fung Shui Wood",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/fungshuiwood.jpg"
+    },
+    {
+      "name": "mangrove",
+      "color": "#D0312D",
+      "text": "Mangrove",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/mangrove.jpg"
+    },
+    {
+      "name": "mudflat",
+      "color": "#5C2C06",
+      "text": "mudflat",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/mudflat.jpg"
+    },
+    {
+      "name": "orchard",
+      "color": "#A03CAE",
+      "text": "Orchard",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/orchard.jpg"
+    },
+    {
+      "name": "plantation",
+      "color": "#ACDF87",
+      "text": "Plantation",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/plantation.jpg"
+    },
+    {
+      "name": "rocky shore",
+      "color": "#FFF4C2",
+      "text": "Rocky Shore",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/rockyshore.jpg"
+    },
+    {
+      "name": "disturbed/wasteland",
+      "color": "#DEDEDE",
+      "text": "Disturbed/Wasteland",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/disturbedwasteland.jpg"
+    },
+    {
+      "name": "sandy shore",
+      "color": "#CC9966",
+      "text": "Sandy Shore",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/sandyshore.jpg"
+    },
+    {
+      "name": "shrubland/grassland",
+      "color": "#EFFD5F",
+      "text": "Shrubland/Grassland",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/shrublandgrassland.jpg"
+    },
+    {
+      "name": "developed area",
+      "color": "#A9A9A9",
+      "text": "Developed Area",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/urbanised.jpg"
+    },
+    {
+      "name": "watercourse",
+      "color": "#1261A0",
+      "text": "Watercourse",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/watercourse.jpg"
+    },
+    {
+      "name": "woodland",
+      "color": "#4FA64F",
+      "text": "Woodland",
+      "type": "polygon",
+      "source": "Habitat_20210419_wgs84.geojson",
+      "group": "sub1point3",
+      "imageUrl": "img/subdetail/habitat/woodland.jpg"
+    },
+    {
+      "name": "country park",
+      "color": "#00FF00",
+      "text": "Country Park (CP)",
+      "type": "polygon",
+      "source": "CountryPark_500m_wgs84.geojson",
+      "group": "sub1point4",
+      "imageUrl": ""
+    },
+    {
+      "name": "Ecologically Important Streams",
+      "color": "#1261A0",
+      "text": "Ecologically Important Stream (EIS)",
+      "type": "line",
+      "source": "EIS_500m_wgs84.geojson",
+      "group": "sub1point4",
+      "imageUrl": "img/subdetail/EcologicallyImportantStream.jpg"
+    },
+    {
+      "name": "priority site",
+      "color": "#FF6600",
+      "text": "Priority Site under New Conservation Policy",
+      "type": "polygon",
+      "source": "priority_clip_wgs84.geojson",
+      "group": "sub1point4",
+      "imageUrl": ""
+    },
+    {
+      "name": "species",
+      "color": "#FC46AA",
+      "text": "Species of Conservation Importance",
+      "type": "point",
+      "source": "species_20210730_wgs84.geojson",
+      "group": "sub1point5",
+      "imageUrl": ""
+    },
+    {
+      "name": "01_500m",
+      "color": "#E81015",
+      "text": "500m Assessment Area",
+      "type": "line",
+      "source": "500m_wgs84.geojson",
+      "group": "sub1point6",
+      "imageUrl": ""
+    },
+    {
+      "name": "mangrove",
+      "color": "#D0312D",
+      "text": "Mangrove",
+      "type": "polygon",
+      "source": "Habitat_20210419_ManMud_wgs84.geojson",
+      "group": "sub2point1",
+      "imageUrl": ""
+    },
+    {
+      "name": "mudflat",
+      "color": "#5C2C06",
+      "text": "mudflat",
+      "type": "polygon",
+      "source": "Habitat_20210419_ManMud_wgs84.geojson",
+      "group": "sub2point1",
+      "imageUrl": ""
+    },
+    {
+      "name": "woodland",
+      "color": "#4FA64F",
+      "text": "Woodland",
+      "type": "polygon",
+      "source": "Habitat_20210419_WooPla_wgs84.geojson",
+      "group": "sub2point2",
+      "imageUrl": ""
+    },
+    {
+      "name": "plantation",
+      "color": "#ACDF87",
+      "text": "Plantation",
+      "type": "polygon",
+      "source": "Habitat_20210419_WooPla_wgs84.geojson",
+      "group": "sub2point2",
+      "imageUrl": ""
+    },
+    {
+      "name": "mudflat",
+      "color": "#5C2C06",
+      "text": "mudflat",
+      "type": "polygon",
+      "source": "Habitat_20210419_Mud_wgs84.geojson",
+      "group": "sub2point3",
+      "imageUrl": ""
+    },
+    {
+      "name": "plantation",
+      "color": "#ACDF87",
+      "text": "Plantation",
+      "type": "polygon",
+      "source": "Habitat_20210419_Pla_wgs84.geojson",
+      "group": "sub2point12",
+      "imageUrl": ""
+    },
+    {
+      "name": "03_Works Site",
+      "color": "#FFFF00",
+      "text": "Works Site",
+      "type": "polygon",
+      "source": "TCETCW_works_site_wgs84.geojson",
+      "group": "sub2",
+      "imageUrl": ""
+    },    
+    {
+      "name": "03_Underground Works Site",
+      "color": "#FFFF00",
+      "text": "TCW_EXT_Tunnel",
+      "type": "line",
+      "source": "TCETCW_works_site_wgs84.geojson",
+      "group": "sub2",
+      "imageUrl": ""
+    },
+    {
+      "name": "03_EAP EEP",
+      "color": "#0018F9",
+      "text": "EAP EEP",
+      "type": "polygon",
+      "source": "EAPEEP_wgs84.geojson",
+      "group": "sub2",
+      "imageUrl": ""
+    },
+    {
+      "name": "03_Works Area",
+      "color": "#FF00C5",
+      "text": "Barging Facilities",
+      "type": "line",
+      "source": "BargingFacilityEco_wgs84.geojson",
+      "group": "sub2",
+      "imageUrl": ""
+    },
+    {
+      "name": "tungchungriver",
+      "color": "#00B0F0",
+      "text": "Tung Chung River",
+      "type": "polygon",
+      "source": "TungChungRiver_wgs84.geojson",
+      "group": "sub2tungchungriver",
+      "imageUrl": ""
+    },
+    {
+      "name": "taihowan",
+      "color": "#FF6600",
+      "text": "Tai Ho Wan",
+      "type": "polygon",
+      "source": "TaiHoWan_wgs84.geojson",
+      "group": "sub2taihowan",
+      "imageUrl": ""
+    },
+    {
+      "name": "wlhnullah",
+      "color": "#00B0F0",
+      "text": "Wong Lung Hang Nullah",
+      "type": "polygon",
+      "source": "WongLungHangNullah_wgs84.geojson",
+      "group": "sub2wlhnullah",
+      "imageUrl": ""
+    },
+    {
+      "name": "country park",
+      "color": "#00FF00",
+      "text": "Country Park (CP)",
+      "type": "polygon",
+      "source": "CountryPark_500m_wgs84_copy.geojson",
+      "group": "sub2cp",
+      "imageUrl": ""
+    },
+    {
+      "name": "coastalprotectionarea",
+      "color": "#996633",
+      "text": "Coastal Protection Area",
+      "type": "polygon",
+      "source": "CoastalProtectionArea_Merge_wgs84.geojson",
+      "group": "sub2cp",
+      "imageUrl": ""
+    },
+    {
+      "name": "conservationarea",
+      "color": "#FFFF00",
+      "text": "Conservation Area",
+      "type": "polygon",
+      "source": "ConservationArea_Merge_wgs84.geojson",
+      "group": "sub2cp",
+      "imageUrl": ""
+    },
+    {
+      "name": "sssi",
+      "color": "#6666FF",
+      "text": "Site of Special Scientific Interests (SSSI)",
+      "type": "line",
+      "source": "SSSI_line_wgs84.geojson",
+      "group": "sub2cp",
+      "imageUrl": ""
+    },
+    {
+      "name": "03_EAP EEP",
+      "color": "#0018F9",
+      "text": "EAP EEP",
+      "type": "polygon",
+      "source": "EAPEEP_wgs84.geojson",
+      "group": "sub3",
+      "imageUrl": ""
+    },
+    {
+      "name": "tce alignment",
+      "color": "#FF9551",
+      "text": "TCE Alignment",
+      "type": "line",
+      "source": "TCE_Alignment_wgs84.geojson",
+      "group": "sub3",
+      "imageUrl": ""
+    },
+    {
+      "name": "tcw alignment",
+      "color": "#FF9551",
+      "text": "TCW Alignment",
+      "type": "line",
+      "source": "TCW_alignment_only_wgs84.geojson",
+      "group": "sub3",
+      "imageUrl": ""
+    },
+    {
+      "name": "tcw tunnel alignment",
+      "color": "#FF9551",
+      "text": "TCW Tunnel Alignment",
+      "type": "line",
+      "source": "TCW_alignment_tunnel_wgs84.geojson",
+      "group": "sub3",
+      "imageUrl": ""
+    }
+
+  ]

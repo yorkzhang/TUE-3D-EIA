@@ -1,0 +1,74 @@
+[
+    {
+      "name": "tce alignment",
+      "color": "#FF9551",
+      "text": "TCE Alignment",
+      "type": "line",
+      "source": "TCE_Alignment_wgs84.geojson",
+      "group": ["sub2point1","sub3point3","sub3point4"],
+      "imageUrl": ""
+    },
+    {
+        "name": "tcw alignment",
+        "color": "#FF9551",
+        "text": "TCW Alignment",
+        "type": "line",
+        "source": "TCW_alignment_only_wgs84.geojson",
+        "group": ["sub2point2","sub3point3","sub3point4"],
+        "imageUrl": ""
+      },
+      {
+        "name": "tcw underground worksite",
+        "color": "#FFFF00",
+        "text": "TCW Underground Worksite",
+        "type": "line",
+        "source": "TCW_underground_worksite_wgs84.geojson",
+        "group": ["sub3point1","sub3point2"],
+        "imageUrl": ""
+      },
+      {
+        "name": "tcw tunnel alignment",
+        "color": "#FF9551",
+        "text": "TCW Tunnel Alignment",
+        "type": "line",
+        "source": "TCW_alignment_tunnel_wgs84.geojson",
+        "group": ["sub2point2","sub3point3","sub3point4"],
+        "imageUrl": ""
+      },
+      {
+        "name": "eapeep",
+        "color": "#0070FF",
+        "text": "Emergency Access Point / Emergency Egress Point",
+        "type": "line",
+        "source": "EAPEEP_wgs84.geojson",
+        "group": ["sub3point1"],
+        "imageUrl": ""
+      },
+      {
+        "name": "tcw work site",
+        "color": "#FFFF00",
+        "text": "TCW Works Site",
+        "type": "line",
+        "source": "TCW_Works_site_wgs84.geojson",
+        "group": ["sub3point1","sub3point2"],
+        "imageUrl": ""
+      },
+      {
+        "name": "tce work site",
+        "color": "#FFFF00",
+        "text": "TCE Works Site",
+        "type": "line",
+        "source": "TCE_works_site_wgs84.geojson",
+        "group": ["sub3point1","sub3point2"],
+        "imageUrl": ""
+      },
+      {
+        "name": "barging facility",
+        "color": "#FF00C5",
+        "text": "Barging Facility",
+        "type": "line",
+        "source": "BargingFacility_wgs84.geojson",
+        "group": ["sub3point1","sub3point2","sub3point3"],
+        "imageUrl": ""
+      }
+  ]

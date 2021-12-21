@@ -1,0 +1,44 @@
+[
+    {
+        "key": "1-4-1",
+        "name" : "Country Park",
+        "title" : "Lantau North (Extension) Country Park",
+        "source" : "CountryPark_500m_wgs84.geojson",
+        "detail": [
+            "Well-established secondary woodlands, shrubland, grassland and fresh water habitats of high conservation and landscape value"
+        ],
+        "imageUrl": "img/subdetail/sites/countrypark.jpg"
+    },
+    {
+        "key": "1-4-2",
+        "name" : "Ecologically Important Stream",
+        "title" : "Wong Lung Hang, Lantau / Tung Chung (Mok Ka and Shek Mun Kap) / Tai Ho, Lantau Ecologically Important Streams",
+        "source" : "EIS_500m_wgs84.geojson",
+        "detail": [
+            "Diverse aquatic fauna and freshwater fish."
+        ],
+        "imageUrl": "img/subdetail/sites/EcologicallyImportantStream.jpeg"
+    },
+    {
+        "key": "1-4-3",
+        "name" : "Priority Site",
+        "title" : "Tai Ho Priority Site",
+        "source" : "priority_clip_wgs84.geojson",
+        "detail": [
+            "For enhanced conservation under New Nature Conservation Policy",
+            "4 major habitat types<ul><li>natural stream</li><li>mangrove stand / mudflat</li><li>agricultural land</li><li>woodland</li></ul>",
+            "Natural stream: moderate diversity of freshwater fish and amphibians, e.g. the endemic Romer’s Tree Frog"
+        ],
+        "imageUrl": "img/subdetail/sites/prioritysite.jpg"
+    },
+    {
+        "key": "1-4-4",
+        "name" : "Marine Park",
+        "title" : "The Brothers Marine Park",
+        "source" : "Marine_Park_wgs84.geojson",
+        "detail": [
+            "For the protection and enhancement of Chinese White Dolphin habitats and feeding grounds"
+        ],
+        "imageUrl": "img/subdetail/sites/marinepark.jpg"
+    }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "number": "1",
+    "color": "#BEBEBE",
+    "text": "Urban"
+  },
+  {
+    "number": "2",
+    "color": "#AAE5F2",
+    "text": "Coastal Water"
+  },
+  {
+    "number": "3",
+    "color": "#025c2d",
+    "text": "Woodland"
+  },
+  {
+    "number": "4",
+    "color": "#64e86a",
+    "text": "Shrubland"
+  },
+  {
+    "number": "5",
+    "color": "#b6f0b9",
+    "text": "Grassland"
+  },
+  {
+    "number": "6",
+    "color": "#f7c15c",
+    "text": "Farmland"
+  },
+  {
+    "number": "7",
+    "color": "#f5220f",
+    "text": "Mangrove/Swamp"
+  },
+  {
+    "number": "8",
+    "color": "#87572f",
+    "text": "Intertidal"
+  },
+  {
+    "number": "9",
+    "color": "#6DBCED",
+    "text": "Pond"
+  },
+  {
+    "number": "10",
+    "color": "#486CF0",
+    "text": "Reservoir"
+  },
+  {
+    "number": "11",
+    "color": "#0729a6",
+    "text": "Reservoir"
+  },
+  {
+    "number": "11",
+    "color": "#6DBCED",
+    "text": "Watercourse"
+  }
+]

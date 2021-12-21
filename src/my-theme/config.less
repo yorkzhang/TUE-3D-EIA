@@ -1,0 +1,128 @@
+// 全局
+//@page_bj:#1b212b;
+@page_bj:#2d3849;
+@menu_bj:#2d3849;
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+// 头部相关
+@login_title_bj:#1f2d3a;
+@left_border_color:#b2b1b1;
+@title_height:80px;
+//内容相关
+@content_height:calc(~"100vh - 80px");
+@menu_widhth: 160px;
+@content_width:calc(~"100vw - 160px");
+@menu_hover_background: #1f2d3a;
+// input相关
+@input_Placeholder_color: #a0a6af;
+@input_background_color:#495362;
+.ivu-select-selection {
+  background: none;
+}
+.ivu-select-selected-value {
+  color: #fff;
+}
+.ivu-message-notice-content {
+  color:#000;
+}
+// 子菜单
+.subMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: calc(~"100vh - 50px");
+  z-index: 2;
+  background-color: fade(#1f2d3a, 55%);
+  
+  .optionBTn{
+    background-color: #2d8cf0;
+    border-color: #2d8cf0;
+  }
+  .subDetail {
+    .subDetailContent {
+      padding: 0 20px;
+      overflow-y: auto;
+      height: calc(~"100vh - 170px");
+    .subItem{
+      width:100%;
+      border-radius: 10px;
+      background-color: @menu_bj;
+      padding: 20px;
+      text-align: left;
+      .subTitle{
+        font-size:14px;
+      }
+      .clickablePoint{
+        display: block;
+        border-radius: 10px;
+        background-color: rgb(80, 99, 130);
+        padding: 10px;
+        margin-top: 10px;  
+        margin-right: 10px;  
+        cursor: pointer;
+        /*    
+        span {
+          left:1.2cm;
+          margin-left: -1.2cm;
+        }
+        span::before {
+          content: counter(chapter) ". ";
+          counter-increment: chapter;
+          float: left;
+          width: 1.2cm;
+        }
+        */
+      }
+    }
+    }
+    
+
+    .subNotification{
+      background-color: #cdcdcd;
+      display: block;
+      height:110px;
+      padding:10px;
+      color: #2D3849;
+      font-size: 15px;
+    }
+  }
+  
+}
+.switchIcon{
+  display: inline-block;
+  width: 30px;
+}
+
+.cesium-infoBox {
+  background:#2D3849;
+}
+.cesium-infoBox-title {
+  background:#506382;
+}
+
+
+@media(max-width:768px){
+  @menu_widhth: 0px;
+  @content_width: 100vw;
+  
+  .subMenu {
+    position: fixed;
+    top: unset;
+    width: 100%;
+    bottom: 80px;
+    height: 40%;
+    z-index: 2;
+    
+    .subDetail {
+      padding: 0 10px!important;
+      .subItem{
+        padding: 10px!important;
+      }
+    }
+  }
+}

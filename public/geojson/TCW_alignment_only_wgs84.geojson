@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "TCW_alignment_only_wgs84",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "FID_": 0, "Entity": "Line", "Level": 6, "Layer": "02_TCW_EXT_Open cut", "Color": 3, "Linetype": "Solid", "Elevation": 0.0, "LineWt": 4, "RefName": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 113.934439611040631, 22.283267819585017 ], [ 113.934224676958905, 22.279336521420621 ] ] ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Entity": "Complex Chain", "Level": 6, "Layer": "02_TCW_EXT_Open cut", "Color": 3, "Linetype": "Solid", "Elevation": 0.0, "LineWt": 4, "RefName": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 113.934124458611507, 22.279342095928524 ], [ 113.934124986622322, 22.279929082632421 ], [ 113.934124986622322, 22.279929082632421 ], [ 113.934126604191377, 22.280041951746597 ], [ 113.934131252836622, 22.280154747957262 ], [ 113.934131252836622, 22.280154747957269 ], [ 113.934304628613035, 22.283325954038794 ] ] ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Entity": "Complex Chain", "Level": 6, "Layer": "02_TCW_EXT_Open cut", "Color": 3, "Linetype": "Solid", "Elevation": 0.0, "LineWt": 4, "RefName": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 113.934304628613035, 22.283325954038794 ], [ 113.934310908370421, 22.283440814255194 ], [ 113.93431090832496, 22.283440814257382 ], [ 113.934314576921949, 22.283507341567937 ] ] ] } },
+{ "type": "Feature", "properties": { "FID_": 0, "Entity": "Complex Chain", "Level": 6, "Layer": "02_TCW_EXT_Open cut", "Color": 3, "Linetype": "Solid", "Elevation": 0.0, "LineWt": 4, "RefName": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 113.934452382662471, 22.283500815887805 ], [ 113.934448712518545, 22.283434288649904 ], [ 113.934448712570742, 22.283434288647435 ], [ 113.934439611040631, 22.283267819585017 ] ] ] } }
+]
+}

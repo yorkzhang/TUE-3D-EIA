@@ -1,0 +1,13 @@
+{
+  "Urban": "#BEBEBE",
+  "Coastal Water": "#AAE5F2",
+  "Woodland": "#025c2d",
+  "Shrubland": "#64e86a",
+  "Grassland": "#b6f0b9",
+  "Farmland": "#f7c15c",
+  "Mangrove/Swamp": "#f5220f",
+  "Intertidal": "#87572f",
+  "Pond": "#6DBCED",
+  "Reservoir": "#486CF0",
+  "Watercourse": "#0729a6"
+}

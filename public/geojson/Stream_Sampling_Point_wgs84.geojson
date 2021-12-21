@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Stream_Sampling_Point_wgs84",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Stream Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.929611014533407, 22.279873958146439 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Stream Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.93026249693861, 22.277294455713317 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Stream Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.941906539255086, 22.277913834050363 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Stream Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.933853679507607, 22.279434629112593 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Stream Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.935455031907466, 22.285509975687997 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Benthic Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.933508287568131, 22.285143889214233 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Benthic Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.931685855203526, 22.284902213094014 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Benthic Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.931911280334788, 22.28814011351194 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Benthic Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.944287797219488, 22.295063518072503 ] } },
+{ "type": "Feature", "properties": { "Id": 0, "Type": "Benthic Sampling Point" }, "geometry": { "type": "Point", "coordinates": [ 113.942152619190963, 22.297509519729353 ] } }
+]
+}
