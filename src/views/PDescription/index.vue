@@ -1,8 +1,8 @@
 <template>
     <div class="subDetail"> 
-        <div class="subDetailContent">
-            <div class="submenuTooltip" @click="closeSubMenu()"></div>
-            <div class="subItem" :style="lightColor" >
+        <div class="subDetailContent" style="overflow:auto;">
+            <div class="submenuTooltip scrollable" @click="closeSubMenu()"></div>
+            <div class="subItem scrollable" :style="lightColor" >
                 <div class="subTitle marginBottom10">Stations of Tung Chung Line Extension</div>
                 <div>
                     <hr/>
@@ -14,7 +14,8 @@
                     </div>
                 </div>
             </div>
-            <div class="subItem" :style="lightColor">
+            <!-- <div class="subItem" :style="lightColor"> -->
+            <div class="subItem scrollable" :style="lightColor">
                 <div class="subTitle marginBottom10">Alignment of Tung Chung Line Extension</div>
                 <div>
                     <hr/>
@@ -41,10 +42,10 @@
                     </div>
                 </div>
             </div>
-            <div class="subItem" :style="lightColor">
+            <!-- <div class="subItem" :style="lightColor">
                 <div class="subTitle marginBottom10">Major Construction Activities</div>
                 <div>
-                    <hr/>
+                    <hr/> -->
                     <!-- <div class="clickablePoint" > -->
                     <!-- <span style="margin: auto; display:table;">Years</span> -->                    
                     <!-- </div> -->
@@ -80,7 +81,7 @@
                             </td>
                         </tr>
                     </table> -->
-                    <table cellspacing="0" class="clickableTable"  style="border:none; margin-right:auto; margin-left:auto;">
+                    <!-- <table cellspacing="0" class="clickableTable"  style="border:none; margin-right:auto; margin-left:auto;">
                         <tr>
                             <td style="width:77px; cursor:pointer;"  @click="openDetail(3,1)">
                                 <div>
@@ -120,14 +121,16 @@
                     <div class="clickablePoint"  @click="openDetail(4,3)" :style="darkColor">
                         <span style="margin: auto; display:table;">Rainwater Harvesting</span>
                     </div>
-                    <!-- <div class="clickablePoint"  @click="openDetail(4,4)" :style="darkColor">
+                    <div class="clickablePoint"  @click="openDetail(4,4)" :style="darkColor">
                         <span style="margin: auto; display:table;">Greywater Recycling</span>
                     </div> -->
-                </div>
-            </div>
+                <!-- </div>
+            </div> --> 
         </div>
-        <div class="subNotification">
-            Note: The transparent buildings illustrated are planned developments which are indicative only and subject to change.
+        <!--<div class="subNotification">-->
+        <div class="subNotification" align="justify" style=" font-size:100%;" >
+            Note: <br>
+            The transparent buildings illustrated are planned developments which are indicative only and subject to change.
         </div>
         
     </div>

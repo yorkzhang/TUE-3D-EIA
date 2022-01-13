@@ -1,6 +1,6 @@
 <template>
     <div class="subDetail"> 
-        <div class="subDetailContent" style="height: calc(100vh - 240px);">
+        <div class="subDetailContent" style="height: calc(100vh - 300px);">
             <div class="submenuTooltip" @click="closeSubMenu()"></div>
             <div class="subItem" :style="lightColor" >
                 <div class="subTitle marginBottom10">Airborne Railway Noise</div>
@@ -13,8 +13,8 @@
                         <hr/>
                         <select name="NoiseNoMitigation" id="NoiseNoMitigation" @change="onChangeNoMitigation($event)" >
                             <option value="" selected="selected" disabled="disabled"></option>
-                            <option value="Leq_day_nomit">Leq (day)</option>
-                            <option value="Leq_night_nomit">Leq (night)</option>
+                            <option value="Leq_day_nomit">Leq <sub>(30min)</sub> (daytime & evening time)</option>
+                            <option value="Leq_night_nomit">Leq <sub>(30min)</sub> (night-time)</option>
                             <option value="Lmax_nomit">Lmax</option>
                         </select>
                     </div>
@@ -25,15 +25,18 @@
                         <select name="NoiseMitigation" id="NoiseMitigation" @change="onChangeMitigation($event)" >
                             <option value="" selected="selected" disabled="disabled"></option>
                             <!-- <option value="Leq_day_mit">Leq (day)</option> -->
-                            <option value="Leq_night_mit">Leq (night)</option>
+                            <option value="Leq_night_mit">Leq <sub>(30min)</sub> (night-time)</option>
                             <!-- <option value="Lmax_mit">Lmax</option> -->
                         </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="subNotification" style="height: 180px;">
-            Note: The first layer of buildings facing the realigned track of TCE are of commercial uses and are not regarded as Noise Sensitive Receivers. The transparent buildings illustrated are planned developments which are indicative only and subject to change.
+        <div class="subNotification" align="justify" style="height: 280px; font-size:100%;" >
+            Note:<br>
+•The first layer of buildings facing the realigned track of TCE are of commercial uses and are not regarded as Noise Sensitive Receivers.<br>
+•Modelling assumptions should refer to the Environmental Impact Assessment (EIA) Report.<br>
+•The transparent buildings illustrated are planned developments which are indicative only and subject to change.
         </div>
     </div>
 </template>
@@ -58,16 +61,21 @@ export default {
         openMitigation() {
             myCesium.zoomPDSub2Point1();
             if(this.withMitigationTabOpen) {
+                //myCesium.switchNoiseLayerOffAll();
                 this.withMitigationTabOpen = false
             }else {
                 //this.resetSelectElement();
                 myCesium.switchNoiseLayerOffAll();
                 this.withMitigationTabOpen = true
                 this.withoutMitigationTabOpen = false
+                //this.withoutMitigationTabOpen = false
             }
+            myCesium.switchWithoutBarrierOff();
+            
+            myCesium.switchWithBarrierOn();
         },
         openWithoutMitigation() {
-            myCesium.zoomPDSub2Point1();
+            myCesium.zoomPDSub2Point1a();
             if(this.withoutMitigationTabOpen) {
                 this.withoutMitigationTabOpen = false
             }else {
@@ -76,6 +84,8 @@ export default {
                 this.withoutMitigationTabOpen = true
                 this.withMitigationTabOpen = false
             }
+            myCesium.switchWithBarrierOff();
+            myCesium.switchWithoutBarrierOn();
         },
         resetSelectElement() {
             var select1 = document.getElementById("NoiseNoMitigation");

@@ -46,6 +46,7 @@ map.initCesium = function () {
     contextOptions: {
       webgl: {
         alpha: true,
+        //preserveDrawingBuffer: false
         preserveDrawingBuffer: true
       }
     }

@@ -22,6 +22,13 @@ const routes = [
     // component: Login,
     component: () => import('../views/main.vue'),
     children: [
+      /*
+      {
+        path: '',
+        name: 'ProjectDescription2',
+        component: () => import('../views/PDescription/index.vue')
+      },
+      */
       {
         path: '',
         name: 'ProjectDescription',

@@ -653,12 +653,12 @@
                 "color" : "993300"
             },
             {
-                "title" : "Comply with the criteria",
+                "title" : "Comply with the criteria (within 5 dB(A) below the criteria)",
                 "type" : "point",
                 "color" : "0099FF"
             },
             {
-                "title" : "Well below the criteria (>= 5 db(A) lower than the criteria)",
+                "title" : "Well below the criteria (>= 5 dB(A) lower than the criteria)",
                 "type" : "point",
                 "color" : "A9D08E"
             }

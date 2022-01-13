@@ -1,12 +1,12 @@
 [
     {
       "name": "Leq_day_nomit",
-      "text": "Leq (day)",
+      "text": "Leq (30min) (daytime & evening time)",
       "source": "EIA_Unmit_Leqday_wgs84.geojson"
     },
     {
         "name": "Leq_night_nomit",
-        "text": "Leq (night)",
+        "text": "Leq (30min) (night-time)",
         "source": "EIA_Unmit_Leqnight_wgs84.geojson"
     },
     {
@@ -16,12 +16,12 @@
     },
     {
         "name": "Leq_day_mit",
-        "text": "Leq (day)",
+        "text": "Leq (30min) (daytime & evening time)",
         "source": "EIA_Mit_Leqday_wgs84.geojson"
       },
       {
           "name": "Leq_night_mit",
-          "text": "Leq (night)",
+          "text": "Leq (30min) (night-time)",
           "source": "EIA_Mit_Leqnight_wgs84.geojson"
       },
       {

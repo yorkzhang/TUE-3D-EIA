@@ -179,7 +179,7 @@ mapBox.switchMenue = function (params) {
   }
   if (params == '3DView') {
     myVue.$store.commit("updateShowBasemapSwitch", false);
-    myCesium.initCesium();
+   // myCesium.initCesium();
 
     myVue.$store.commit("updateShowMap", false);
 

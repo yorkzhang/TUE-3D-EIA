@@ -133,9 +133,10 @@
         </Button>
       </div>-->
     </div>
-    <div class="subNotification">
-        Note: The transparent buildings illustrated are planned developments which are indicative only and subject to change.
-    </div> 
+     <div class="subNotification" align="justify" style=" font-size:100%;" >
+            Note: <br>
+            The transparent buildings illustrated are planned developments which are indicative only and subject to change.
+     </div>
     
   </div>
 </template>

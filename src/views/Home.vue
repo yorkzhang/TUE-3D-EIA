@@ -27,7 +27,7 @@ import MapBox from "@/libs/myMapBox.js";
 import "@/style/mapbox-gl-draw.css";
 import Cesium from "../libs/myCesium.js";
 export default {
-  name: "Home",
+  /* name: "Home",
   data() {
     return {};
   },
@@ -44,9 +44,10 @@ export default {
     },
   },
   mounted() {
-    this.init();
-  },
+    this.init(); 
+  },*/
 };
+
 </script>
 <style>
 .heightMy {

@@ -71,6 +71,11 @@ cesiumMap.initCesium = function () {
     fullscreenButton: false,
     vrButton: false,
     sceneModePicker: false,
+    maximumScreenSpaceError: 64,  //for better visualisation from the mobile devices
+   // maximumNumberOfLoadedTiles:  1000,  //added on 22/01/05 for iPhone tesing
+   // maximumMemoryUsage:  50, //added on 22/01/05 for iPhone tesing
+    maximumNumberOfLoadedTiles:  isMobile.any ? 1000 : 100000000, //added on 22/01/05 for iPhone tesing
+    maximumMemoryUsage:  isMobile.any ? 50 : 200, //added on 22/01/05 for iPhone tesing
     infoBox: true,
     scene3DOnly: true,
     homeButton: false,
@@ -81,6 +86,7 @@ cesiumMap.initCesium = function () {
       webgl: {
         alpha: true,
         preserveDrawingBuffer: true,
+       // preserveDrawingBuffer: false,
         powerPreference: "low-power",
       }
     },
@@ -135,16 +141,54 @@ cesiumMap.initCesium = function () {
   if (!scene.pickPositionSupported) {
     window.alert("This browser does not support pickPosition.");
   }
+
   
-  //load buildings and 3dtiles
+
+  console.log("Load 3D model St")
+  //load buildings and 3dtiles 
   add3dTiles(viewer, 'tiles/hk1/texture/tileset.json', 0.8, "#ffffff", 1, false);
   add3dTiles(viewer, 'tiles/hk1/notexture/tileset.json', 0.4, "#ffffff", 1, false);
-  add3dTiles(viewer, 'tiles/area58/tileset.json', 0.2, "#ffffff", 0.3, false);
-  add3dTiles(viewer, 'tiles/3dtiles/CEDD_TCNTE/tileset.json', 0.2, "#ffffff", 0.3, false);
-  add3dTiles(viewer, 'tiles/3dtiles/TCE/tileset.json', 0.2, "", 1, true);
-  //add3dTiles(viewer, 'tiles/3dtiles/TCE_13/tileset.json', 0.2, "", 1, true);
-  add3dTiles(viewer, 'tiles/3dtiles/TCW/tileset.json', 0.1, "", 1, false);
 
+
+  /* No Use - outdated 3dtiles
+  add3dTiles(viewer, 'tiles/area58/tileset.json', 0.2, "#000000", 0.3, false);
+  add3dTiles(viewer, 'tiles/3dtiles/Area 58_v5/tileset.json', 0.2, "#ffffff", 0.3, false);
+  
+  add3dTiles(viewer, 'tiles/3dtiles/TCE/tileset.json', 0.2, "", 1, true);
+  add3dTiles(viewer, 'tiles/3dtiles/TCE_13/tileset.json', 0.2, "", 1, true);
+  add3dTiles(viewer, 'tiles/3dtiles/TCW/tileset.json', 0.1, "", 1, false);
+  add3dTiles(viewer, 'tiles/3dtiles/Test_fbx_02/tileset.json', 0.1, "", 1, false); 
+  No Use - outdated 3dtiles */
+ 
+  
+  // Updated layout 2021-Dec
+
+  
+  add3dTiles(viewer, 'tiles/3dtiles/Area_58_v6/tileset.json', 0.2, "#ffffff", 0.5, false);
+  
+  add3dTiles(viewer, 'tiles/3dtiles/TCW_v2_1a_EEPEAP_SL/tileset.json', 0.15, "", 1, false);
+  add3dTiles(viewer, 'tiles/3dtiles/TCW_02_T2_dae_SL/tileset.json', 0.15, "", 1, false);
+  add3dTiles(viewer, 'tiles/3dtiles/TCW_02_T1_Obj_SL/tileset.json', 0.15, "", 1, false);
+
+ 
+  add3dTiles(viewer, 'tiles/3dtiles/TCE_v2_NoBarrier_v2/tileset.json', 0.15, "", 1, false);
+  
+  add3dTiles(viewer, 'tiles/3dtiles/CEDD_TCNTE/tileset.json', 0.4, "#ffffff", 0.5, false);
+
+  add3dTiles(viewer, 'tiles/3dtiles/TCE_v2_Barrier/tileset.json', 0.15, "", 1, true);
+
+
+
+//add3dTiles(viewer, 'tiles/3dtiles/Area_58_v6/tileset.json', 0.2, "#00ffff", 0.3, true);
+
+  console.log("Load 3D model Ed")
+  
+
+
+  //load glft
+  //addglft(viewer, 113.9599695238, 22.2964514514, 'gltf/TCE.gltf', true);
+
+  console.log("Load terrain")
   // add terrain data
   var cesiumTerrainProviderMeshes = new Cesium.CesiumTerrainProvider({
     url: 'terrain/',
@@ -154,12 +198,19 @@ cesiumMap.initCesium = function () {
   viewer.terrainProvider = cesiumTerrainProviderMeshes;
   
   
+  console.log("Load OZP")
+  
+
+
+  /* ---------------- Cause iOS crush
   var neighborhoodsPromise = new Cesium.GeoJsonDataSource.load(
     "geojson/ozp_dev.geojson", {
       fill: Cesium.Color.GAINSBORO,
       clampToGround: !0
     }
   )
+  
+
   neighborhoodsPromise.then(function(dataSource) {
     console.log("CEDD_TCNTE_PDA.geojson then start point");
     viewer.dataSources.add(dataSource);
@@ -175,10 +226,37 @@ cesiumMap.initCesium = function () {
         entity.polygon.classificationType = Cesium.ClassificationType.TERRAIN;
       }
     }
-
+  Cause iOS crush ---------------- */
 
     // ====================== Ecology Layers  ==> The fact that the ozp_dev, ozp_road and ozp_openspace layers took longer time to load  makes the Ecology Layers always loaded first and covered by the ozp_dev, ozp_road and ozp_openspace layers that finished loading the last.  These Ecology Layers have to be loaded after the ozp_dev, ozp_road and ozp_openspace loaded. To make sure ozp_dev, ozp_road and ozp_openspace layers are loaded first, these Ecology Layers geojson addition are located in the ".then" function of ozp_dev (ideally inside the .then function that have the longest loading time between ozp_dev, ozp_road and ozp_openspace). Otherwise, these Ecology Layers will be displayed under the ozp_dev, ozp_road and ozp_openspace layers (covered by them).
 
+
+  var neighborhoodsPromise = new Cesium.GeoJsonDataSource.load(
+    "geojson/ozp_dev.geojson", {
+      fill: Cesium.Color.GAINSBORO,
+      clampToGround: !0
+    }
+  )
+
+
+  neighborhoodsPromise.then(function(dataSource) {
+    console.log("CEDD_TCNTE_PDA.geojson then start point");
+    viewer.dataSources.add(dataSource);
+    var neiborhoods = dataSource.entities;
+    var neighborhoodsEntities = dataSource.entities.values;
+    for(var i = 0; i < neighborhoodsEntities.length; i++)
+    {
+      var entity = neighborhoodsEntities[i];
+      if(Cesium.defined(entity.polygon))
+      {
+        //entity.polygon.material = Cesium.Color.fromCssColorString("#94a08b");
+        entity.polygon.material = "img/materials/materials_dev.PNG";
+        entity.polygon.classificationType = Cesium.ClassificationType.TERRAIN;
+      }
+    }
+  
+    console.log("Load 2D")
+    
     cesiumMap.addGeojsonPolyline({
       url: "geojson/Sampling_Location_wgs84.geojson",
       menuId: 3
@@ -196,6 +274,7 @@ cesiumMap.initCesium = function () {
     cesiumMap.addGeojsonPolygon({
       data: "geojson/rev1/CountryPark_500m_wgs84.geojson"
     })  
+
     cesiumMap.addGeojsonPolygon({
       data: "geojson/rev1/priority_clip_wgs84.geojson"
     })
@@ -207,7 +286,7 @@ cesiumMap.initCesium = function () {
       menuId: 3
     })
     
-
+    console.log("Load 2D B2")
   
     cesiumMap.addGeojsonPointBb({
       url: "geojson/rev1/species_20210730_wgs84.geojson"
@@ -246,10 +325,18 @@ cesiumMap.initCesium = function () {
     cesiumMap.addGeojsonPolygon({
       data: "geojson/ConservationArea_Merge_wgs84.geojson"
     })
+    /* Comment on 22/01/05 
+    cesiumMap.addGeojsonPolyline({
+      url: "geojson/SSSI_line_wgs84.geojson",
+      menuId: 3
+    })*/
+
+    
     cesiumMap.addGeojsonPolyline({
       url: "geojson/SSSI_line_wgs84.geojson",
       menuId: 3
     })
+    
     cesiumMap.addGeojsonPolyline({
       url: "geojson/TCETCW_works_site_wgs84.geojson",
       menuId: 3
@@ -267,6 +354,8 @@ cesiumMap.initCesium = function () {
       url: "geojson/500m_wgs84.geojson",
       menuId: 3
     })
+
+    console.log("Load 2D B3")
 
     // ====================== Project Description Layers ==> The fact that the ozp_dev, ozp_road and ozp_openspace layers took longer time to load  makes the Project Description Layers always loaded first and covered by the ozp_dev, ozp_road and ozp_openspace layers that finished loading the last.  These Project Description Layers have to be loaded after the ozp_dev, ozp_road and ozp_openspace loaded. To make sure ozp_dev, ozp_road and ozp_openspace layers are loaded first, these Project Description Layers geojson addition are located in the ".then" function of ozp_dev (ideally inside the .then function that have the longest loading time between ozp_dev, ozp_road and ozp_openspace). Otherwise, these Project Description Layers will be displayed under the ozp_dev, ozp_road and ozp_openspace layers (covered by them).
     cesiumMap.addGeojsonPolyline({
@@ -365,6 +454,9 @@ cesiumMap.initCesium = function () {
     })
   })
   
+
+  console.log("Not sure")
+
   var neighborhoodsPromise2 = new Cesium.GeoJsonDataSource.load(
     "geojson/ozp_road.geojson", {
       fill: Cesium.Color.GAINSBORO,
@@ -422,7 +514,7 @@ cesiumMap.initCesium = function () {
   // })
 
   //飞到香港 Fly to hong kong
-  /*cesiumMap.cesium.viewer.camera.flyTo({
+/*   cesiumMap.cesium.viewer.camera.flyTo({
     destination: new Cesium.Cartesian3(-2396391.1086170613, 5397892.667522567, 2402415.201798005),
     orientation: {
       heading: 5.981130766574789,
@@ -430,21 +522,85 @@ cesiumMap.initCesium = function () {
       pitch: -0.3731015881849742,
       roll: 0.0
     }
-  });*/
+  }); */
   //console.log(Country_Park_for_TCLE_wgs84.geojson)
   //飞到九龙 Fly to Kowloon
 
+  var moveStartPosition;
+  var moveStartHeading;
+  var moveStartPitch;
+  var moveStartRoll;
+
+  cesiumMap.cesium.viewer.camera.moveStart.addEventListener(function() {
+    //moveStartPosition = cesiumMap.cesium.viewer.camera.position;
+    moveStartHeading = cesiumMap.cesium.viewer.camera.heading;
+    moveStartPitch = cesiumMap.cesium.viewer.camera.pitch;
+    moveStartRoll = cesiumMap.cesium.viewer.camera.roll;
+  });
+
+
   cesiumMap.cesium.viewer.camera.moveEnd.addEventListener(function() {
-    console.log("position");
-    console.log(cesiumMap.cesium.viewer.camera.position);
-    console.log("direction");
-    console.log(cesiumMap.cesium.viewer.camera.direction);
-    console.log("heading");
-    console.log(cesiumMap.cesium.viewer.camera.heading);
-    console.log("pitch");
-    console.log(cesiumMap.cesium.viewer.camera.pitch);
-    console.log("roll");
-    console.log(cesiumMap.cesium.viewer.camera.roll);
+    // console.log("position");
+    // console.log(cesiumMap.cesium.viewer.camera.position);
+    // console.log("position lat-lon");
+    // var cart = Cesium.Cartographic.fromCartesian(cesiumMap.cesium.viewer.camera.position);
+    // console.log(Cesium.Math.toDegrees(cart.latitude) + "-" + Cesium.Math.toDegrees(cart.longitude));
+    // console.log("direction");
+    // console.log(cesiumMap.cesium.viewer.camera.direction);
+    // console.log("heading");
+    // console.log(cesiumMap.cesium.viewer.camera.heading);
+    // console.log("pitch");
+    // console.log(cesiumMap.cesium.viewer.camera.pitch);
+    // console.log("roll");
+    // console.log(cesiumMap.cesium.viewer.camera.roll);
+
+    // console.log("moveStartPosition");
+    // console.log(moveStartPosition);
+    // console.log("moveStartHeading");
+    // console.log(moveStartHeading);
+    // console.log("moveStartPitch");
+    // console.log(moveStartPitch);
+    // console.log("moveStartRoll");
+    // console.log(moveStartRoll);
+    // console.log("position from left-bottom");
+    // var cart = Cesium.Cartesian3.fromDegrees(113.832126, 22.184150,0);
+    // console.log(cart.x + "-" + cart.y);
+    // console.log("position from right-top");
+    // cart = Cesium.Cartesian3.fromDegrees(114.069211, 22.355712,0);
+    // console.log(cart.x + "-" + cart.y);
+
+    // var currentX = cesiumMap.cesium.viewer.camera.position.x;
+    // var currentY = cesiumMap.cesium.viewer.camera.position.y;
+    // console.log("currentX");
+    // console.log(currentX);
+    // console.log("currentY");
+    // console.log(currentY);
+    // if (-2387505.999186705 < currentX || currentX < -2406914.606070674 || 5424990.756067731 < currentY || currentY < 5395383.0976586845 )
+    // {
+    //   if (-2387505.999186705 < currentX)
+    //   {
+    //     console.log("currentX > -2387505.999186705");
+    //     currentX = -2387505.999186705;
+    //   }
+    //   else if(currentX < -2406914.606070674)
+    //   {
+    //     console.log("currentX < -2406914.606070674");
+    //     currentX = -2406914.606070674;
+    //   }
+
+    //   if (5424990.756067731 < currentY)
+    //   {
+    //     console.log("currentY > 5424990.756067731");
+    //     currentY = 5424990.756067731;
+    //   }
+    //   else if(currentY < 5395383.0976586845)
+    //   {
+    //     console.log("currentY < 5395383.0976586845");
+    //     currentY = 5395383.0976586845;
+    //   }
+
+    //   zoomToPlace(currentX, currentY, cesiumMap.cesium.viewer.camera.position.z, moveStartHeading, moveStartPitch, moveStartRoll)
+    // }
   });
 
   // --------------------------------------- try tooltip on entity -----------------------------
@@ -1675,7 +1831,9 @@ cesiumMap.switchLayer = function (layerKey) {  // layerKey = the group of layers
   {
     var sourceName = layerToSwitch[i];
     var dataSource = viewer.dataSources.getByName(sourceName);
+    //comment on 2022-01-04 1345, Chrome debug show error, don't know why
     dataSource[0].show = !dataSource[0].show;
+    
   }
 }
 
@@ -1842,7 +2000,7 @@ cesiumMap.switchTCETCWOff = function() {
   let viewer = cesiumMap.cesium.viewer;
   for (var i = 0; i <viewer.scene.primitives._primitives.length - 1; i++)
   {
-    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE/" || viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCW/" )
+    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE_v2/" || viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCW/" )
     {
       viewer.scene.primitives._primitives[i].show = false;
     }
@@ -1854,7 +2012,7 @@ cesiumMap.switchTCETCWOn = function() {
   let viewer = cesiumMap.cesium.viewer;
   for (var i = 0; i <viewer.scene.primitives._primitives.length - 1; i++)
   {
-    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE/" || viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCW/" )
+    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE_v2/" || viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCW/" )
     {
       viewer.scene.primitives._primitives[i].show = true;
     }
@@ -1862,7 +2020,54 @@ cesiumMap.switchTCETCWOn = function() {
   //console.log("viewer.scene.primitives._primitives[0]", viewer.scene.primitives._primitives[0]._basePath)
   //viewer.scene.primitives._primitives[0].show = true;
 }
-
+cesiumMap.switchWithBarrierOff = function() {
+  let viewer = cesiumMap.cesium.viewer;
+  for (var i = 0; i <viewer.scene.primitives._primitives.length - 1; i++)
+  {
+    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE_v2_Barrier/" )
+    {
+      viewer.scene.primitives._primitives[i].show = false;
+    }
+  }
+  //console.log("viewer.scene.primitives._primitives[0]", viewer.scene.primitives._primitives[0])
+  //viewer.scene.primitives._primitives[0].show = false;
+}
+cesiumMap.switchWithBarrierOn = function() {
+  let viewer = cesiumMap.cesium.viewer;
+  for (var i = 0; i <viewer.scene.primitives._primitives.length - 1; i++)
+  {
+    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE_v2_Barrier/")
+    {
+      viewer.scene.primitives._primitives[i].show = true;
+    }
+  }
+  //console.log("viewer.scene.primitives._primitives[0]", viewer.scene.primitives._primitives[0]._basePath)
+  //viewer.scene.primitives._primitives[0].show = true;
+}
+cesiumMap.switchWithoutBarrierOff = function() {
+  let viewer = cesiumMap.cesium.viewer;
+  for (var i = 0; i <viewer.scene.primitives._primitives.length - 1; i++)
+  {
+    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE_v2_NoBarrier_v2/" )
+    {
+      viewer.scene.primitives._primitives[i].show = false;
+    }
+  }
+  //console.log("viewer.scene.primitives._primitives[0]", viewer.scene.primitives._primitives[0])
+  //viewer.scene.primitives._primitives[0].show = false;
+}
+cesiumMap.switchWithoutBarrierOn = function() {
+  let viewer = cesiumMap.cesium.viewer;
+  for (var i = 0; i <viewer.scene.primitives._primitives.length - 1; i++)
+  {
+    if (viewer.scene.primitives._primitives[i]._basePath =="tiles/3dtiles/TCE_v2_NoBarrier_v2/")
+    {
+      viewer.scene.primitives._primitives[i].show = true;
+    }
+  }
+  //console.log("viewer.scene.primitives._primitives[0]", viewer.scene.primitives._primitives[0]._basePath)
+  //viewer.scene.primitives._primitives[0].show = true;
+}
 //## 调整entity 图层的透明度  Adjust the transparency of the entity layer
 cesiumMap.switchEntityTransparency = function (params) {//
   let viewer = cesiumMap.cesium.viewer;
@@ -1881,28 +2086,103 @@ cesiumMap.switchEntityTransparency = function (params) {//
   }
 }
 
-function add3dTiles(viewer, url, laz, color, opacity, zoomto) {
-  var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
+function add3dTiles222(viewer, url, laz, color, opacity, zoomto) {
+  console.log(url)
+ /* var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
     url: url,
     modelMatrix: Cesium.Matrix4.fromArray([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]),
     maximumScreenSpaceError: isMobile.any ? 64 : 4, //for better visualisation from the mobile devices
     maximumNumberOfLoadedTiles: isMobile.any ? 1000 : 100000000,
     luminanceAtZenith: laz,
+  }));*/
+  // cesiumMap.change3dTilesTransparency();
+}
+
+// ss
+function add3dTiles(viewer, url, laz, color, opacity, zoomto) {
+  /* backup
+  var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
+    url: url,   
+    modelMatrix: Cesium.Matrix4.fromArray([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]),
+    maximumScreenSpaceError: isMobile.any ? 64 : 4, //for better visualisation from the mobile devices
+    //maximumNumberOfLoadedTiles: isMobile.any ? 1000 : 100000000,
+    maximumNumberOfLoadedTiles: isMobile.any ? 100 : 100000000, //added on 22/01/05 for iPhone tesing
+    maximumMemoryUsage: isMobile.any ? 10: 512, //added on 22/01/05 for iPhone tesing
+    luminanceAtZenith: laz,
+  }));*/
+
+  // for iPhone testing
+  var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
+    url: url,   
+    modelMatrix: Cesium.Matrix4.fromArray([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]),
+    maximumScreenSpaceError:  64, //for better visualisation from the mobile devices
+    //maximumNumberOfLoadedTiles: isMobile.any ? 1000 : 100000000,
+    maximumNumberOfLoadedTiles:  isMobile.any ? 1000 : 100000000, //added on 22/01/05 for iPhone tesing
+    maximumMemoryUsage:  isMobile.any ? 50 : 200, //added on 22/01/05 for iPhone tesing
+    luminanceAtZenith: laz,
   }));
 
-  // tileset.allTilesLoaded.addEventListener(function () {
+    // tileset.allTilesLoaded.addEventListener(function () {
   //   console.log('All tiles are loaded');
   // });
   tileset.style = new Cesium.Cesium3DTileStyle({
     color : "color('"+ color +"',"+ opacity +")",
     show: true,
-  })
+  });
   
   if (zoomto){
     viewer.zoomTo(tileset);
-  }
+  };
   // cesiumMap.change3dTilesTransparency();
 }
+//
+
+function addglft(viewer, posX, posY, url, zoomto)
+{
+  var entityglft = viewer.entities.add({
+    name: 'test',
+    position: Cesium.Cartesian3.fromDegrees(113.9599695238, 22.2964514514, 250.0),
+    model: {
+      uri: 'TCE18_P1.gltf',
+      //uri: 'free_car_001.gltf',
+      minimumPixelSize: 128,
+      maximumScale: 20000
+      //heightReference: Cesium.HeightReference.CLAMP_TO_GROUND
+      //color: Cesium.Color.GAINSBORO
+    }
+  });
+  console.log('model inited');
+  viewer.zoomTo(entityglft);
+  console.log('tried zoom');
+
+  // var modelGltf = viewer.scene.primitives.add(Cesium.Model.fromGltf({
+  //   url: 'TCE18_P01.gltf',
+  //   modelMatrix: Cesium.Transforms.eastNorthUpToFixedFrame(Cesium.Cartesian3.fromDegrees(113.9599695238, 22.2964514514, 0.0))
+  //   //modelMatrix: Cesium.Matrix4.fromArray([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]),
+  //   //color: Cesium.Color.GAINSBORO
+  //   //scale: 3
+  // }));
+
+  // var gltfModel = Cesium.Model.fromGltf({
+  //   url: 'TCE18_P01.gltf',
+  //   modelMatrix: Cesium.Transforms.eastNorthUpToFixedFrame(Cesium.Cartesian3.fromDegrees(113.9599695238, 22.2964514514, 0.0))
+  // });
+  // console.log('model inited');
+  // gltfModel.then(function(model){
+  //   console.log('start promise');
+  //   viewer.scene.primitives.add(model);
+
+  //   console.log('after fromGltf');
+  //   if (zoomto){
+  //     viewer.zoomTo(gltfModel);
+  //     console.log('zoomed to Gltf');
+  //   }
+  // }).otherwise(function(e){
+  //   alert(e);
+  // });
+
+}
+
 cesiumMap.change3dTilesTransparency = function () {
   //下面的样式配置后续再研究吧，感觉默认的挺好看的。 Let's study the following style configuration later, I feel that the default one is pretty good.
   var HKTilesetStyle = new Cesium.Cesium3DTileStyle({
@@ -2107,6 +2387,18 @@ cesiumMap.intersectDatabase = function (geojson) {
 }
 
 //### Zoom to areas
+function zoomToPlace(posX, posY, posZ, head, pit, rol)
+{
+  cesiumMap.cesium.viewer.camera.flyTo({
+    destination: new Cesium.Cartesian3(posX, posY, posZ),
+    orientation: {
+      heading: head,
+      //heading: 10,
+      pitch: pit,
+      roll: rol
+    }
+  });
+}
 cesiumMap.zoomSub2Point1 = function () {
   cesiumMap.cesium.viewer.camera.flyTo({
     destination: new Cesium.Cartesian3(-2398418.634065974, 5401571.584679408, 2403544.8487699777),
@@ -2285,6 +2577,16 @@ cesiumMap.zoomPDSub1Point2 = function () {
 cesiumMap.zoomPDSub2Point1 = function () {
   cesiumMap.cesium.viewer.camera.flyTo({
     destination: new Cesium.Cartesian3(-2398028.6804409255, 5396502.718107255, 2405083.984392912),
+    orientation: {
+      heading: 6.19870814624339,
+      pitch: -1.3233941967187968,
+      roll: 0.00023257340809035298
+    }
+  });
+}
+cesiumMap.zoomPDSub2Point1a = function () {
+  cesiumMap.cesium.viewer.camera.flyTo({
+    destination: new Cesium.Cartesian3(-2398028.6904409254, 5396502.728107254, 2405083.984392912),
     orientation: {
       heading: 6.19870814624339,
       pitch: -1.3233941967187968,

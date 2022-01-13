@@ -104,7 +104,12 @@
         <span>{{ key }}</span>
       </div>
     </div> -->
+    
+    <!--
     <div class="legend" v-show="this.$store.state.surveyLocationOn || this.$store.state.habitatMapOn || this.$store.state.sitesConservationOn || this.$store.state.assessment500mOn || this.$store.state.ecologySub2and3On || this.$store.state.pDescSub2Point1On || this.$store.state.pDescSub2Point2On || this.$store.state.pDescYear1On || this.$store.state.pDescYear2On || this.$store.state.pDescYear3On || this.$store.state.pDescYear4On || this.$store.state.noiseOn">
+    -->
+    <div class="legend" v-if="0 || this.$store.state.surveyLocationOn || this.$store.state.habitatMapOn || this.$store.state.sitesConservationOn || this.$store.state.assessment500mOn || this.$store.state.ecologySub2and3On || this.$store.state.pDescSub2Point1On || this.$store.state.pDescSub2Point2On || this.$store.state.pDescYear1On || this.$store.state.pDescYear2On || this.$store.state.pDescYear3On || this.$store.state.pDescYear4On || this.$store.state.noiseOn">
+    
       <div class="legendTitle">Legend</div>
       <!-- <Button
         shape="circle"
