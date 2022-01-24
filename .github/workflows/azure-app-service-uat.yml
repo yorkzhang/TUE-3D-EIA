@@ -1,7 +1,5 @@
 name: Azure App Service UAT
 
-AZURE_WEBAPP_UAT_PUBLISH_PROFILE
-
 on:
 #  push:
 #    branches:
