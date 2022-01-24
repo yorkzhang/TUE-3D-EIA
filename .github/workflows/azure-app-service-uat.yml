@@ -10,7 +10,7 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: tue-3d-eia
+  AZURE_WEBAPP_NAME: arup-tue-eia-3d-visualization-uat-web
   AZURE_WEBAPP_PACKAGE_PATH: 'dist'
   NODE_VERSION: '14.x' 
 
