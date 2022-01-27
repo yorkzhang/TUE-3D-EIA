@@ -269,24 +269,7 @@
       "group": "sub2point12",
       "imageUrl": ""
     },
-    {
-      "name": "03_Works Site",
-      "color": "#FFFF00",
-      "text": "Works Site",
-      "type": "polygon",
-      "source": "TCETCW_works_site_wgs84.geojson",
-      "group": "sub2",
-      "imageUrl": ""
-    },    
-    {
-      "name": "03_Underground Works Site",
-      "color": "#FFFF00",
-      "text": "TCW_EXT_Tunnel",
-      "type": "line",
-      "source": "TCETCW_works_site_wgs84.geojson",
-      "group": "sub2",
-      "imageUrl": ""
-    },
+    
     {
       "name": "03_EAP EEP",
       "color": "#0018F9",

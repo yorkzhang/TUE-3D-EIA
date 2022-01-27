@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="title">
-      <img src="img/arup-logo.png" alt="" />
+      <!-- <img src="img/arup-logo.png" alt="" /> -->
       <span>Environmental Intelligence System</span>
     </div>
     <div class="content">

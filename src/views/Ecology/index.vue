@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="subDetail">The function is not open yet</div> -->
   <div class="subDetail">  
-    <div class="subDetailContent"> 
+    <div class="subDetailContent" style="height: calc(100vh - 270px);"> 
       <div class="submenuTooltip" @click="closeSubMenu()"></div>
       <div class="subItem" :style="lightColor">
         <div class="subTitle marginBottom10" @click="openSub1" style="cursor: pointer;">Ecological Baseline & Survey Infomation</div>
@@ -76,7 +76,7 @@
               <span>6. Avoidance of Re-diversion of Wong Lung Hang Nullah</span>
             </div>
             <div class="clickablePoint" @click="openDetail(2,12)" :style="darkColor">
-              <span>7. Protection Zone for Flora of Conservation Importance</span>
+              <span>7. Avoidance of Flora of Conservation Importance by Protection Zone</span>
             </div>
             <div class="clickablePoint" @click="openDetail(2,7)" :style="darkColor">
               <span>8. Minimisation of Surface Runoff and Provision of Necessary Treatment Facilities</span>
@@ -133,9 +133,10 @@
         </Button>
       </div>-->
     </div>
-     <div class="subNotification" align="justify" style=" font-size:100%;" >
+     <div class="subNotification" align="justify" style="height: 300px; font-size:100%;" >
             Note: <br>
-            The transparent buildings illustrated are planned developments which are indicative only and subject to change.
+            •The information provided on this website is for reference only. Please refer to the Environmental Impact Assesssment (EIA) Report for more details, assumptions and assessment results.<br>
+            •The transparent buildings illustrated are planned developments which are indicative only and subject to change.
      </div>
     
   </div>

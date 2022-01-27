@@ -68,12 +68,12 @@ const routes = [
         path: '/help',
         name: 'Help',
         component: () => import('../views/Help/index.vue')
-      },
-      {
-        path: '/feedback',
-        name: 'Feedback',
-        component: () => import('../views/Feedback/index.vue')
       }
+      //{
+      //  path: '/feedback',
+      //  name: 'Feedback',
+      //  component: () => import('../views/Feedback/index.vue')
+     // }
     ]
   }
 
