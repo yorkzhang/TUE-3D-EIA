@@ -1,6 +1,6 @@
 <template>
     <div class="subDetail"> 
-        <div class="subDetailContent" style="height: calc(100vh - 300px);">
+        <div class="subDetailContent" style="height: calc(100vh - 370px);">
             <div class="submenuTooltip" @click="closeSubMenu()"></div>
             <div class="subItem" :style="lightColor" >
                 <div class="subTitle marginBottom10">Airborne Railway Noise</div>
@@ -32,8 +32,9 @@
                 </div>
             </div>
         </div>
-        <div class="subNotification" align="justify" style="height: 280px; font-size:100%;" >
+        <div class="subNotification" align="justify" style="height: 300px; font-size:100%;" >
             Note:<br>
+•The information provided on this website is for reference only. Please refer to the Environmental Impact Assesssment (EIA) Report for more details, assumptions and assessment results.<br>
 •The first layer of buildings facing the realigned track of TCE are of commercial uses and are not regarded as Noise Sensitive Receivers.<br>
 •Modelling assumptions should refer to the Environmental Impact Assessment (EIA) Report.<br>
 •The transparent buildings illustrated are planned developments which are indicative only and subject to change.

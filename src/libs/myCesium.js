@@ -74,7 +74,7 @@ cesiumMap.initCesium = function () {
     maximumScreenSpaceError: 64,  //for better visualisation from the mobile devices
    // maximumNumberOfLoadedTiles:  1000,  //added on 22/01/05 for iPhone tesing
    // maximumMemoryUsage:  50, //added on 22/01/05 for iPhone tesing
-    maximumNumberOfLoadedTiles:  isMobile.any ? 1000 : 100000000, //added on 22/01/05 for iPhone tesing
+    maximumNumberOfLoadedTiles:  isMobile.any ? 1000 : 500000000, //added on 22/01/05 for iPhone tesing
     maximumMemoryUsage:  isMobile.any ? 50 : 200, //added on 22/01/05 for iPhone tesing
     infoBox: true,
     scene3DOnly: true,
@@ -137,7 +137,7 @@ cesiumMap.initCesium = function () {
   Cesium.GeoJsonDataSource.clampToGround = true;
   viewer.scene.postProcessStages.fxaa.enabled = true;
   var scene = viewer.scene;
-  scene.screenSpaceCameraController.minimumZoomDistance = 350;
+  scene.screenSpaceCameraController.minimumZoomDistance = 150;
   if (!scene.pickPositionSupported) {
     window.alert("This browser does not support pickPosition.");
   }
@@ -337,10 +337,10 @@ cesiumMap.initCesium = function () {
       menuId: 3
     })
     
-    cesiumMap.addGeojsonPolyline({
-      url: "geojson/TCETCW_works_site_wgs84.geojson",
-      menuId: 3
-    })
+    // cesiumMap.addGeojsonPolyline({
+    //   url: "geojson/TCETCW_works_site_wgs84.geojson",
+    //   menuId: 3
+    // })
     // cesiumMap.addGeojsonPolyline({
     //   url: "geojson/TCW_alignment_tunnel2_wgs84.geojson",
     //   menuId: 3
@@ -1256,7 +1256,8 @@ cesiumMap.addGeojsonPolyline = function ({
                 {
                   var itemDetCell = "";
                   var itemTitle = "";
-                  itemTitle = currentItemDet.title;
+                  //itemTitle = currentItemDet.title;
+                  itemTitle = layerProperty;
                   if (currentItemDet.detail.length > 0 )
                   {
                     itemDetCell += "<ul>";

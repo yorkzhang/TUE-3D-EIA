@@ -6,12 +6,14 @@
       <div class="title_mobile_title">Tung Chung Line Extension EIA</div>
     </div>
     <div class="titleRight">
+      <!--
       <div class="titleMenu">
         中
-      </div>
+      </div>      
       <div class="titleMenu">
         ENG
       </div>
+      -->
       <div class="titleMenu">
         <img src="img/infoIconWhite.png" />
       </div>

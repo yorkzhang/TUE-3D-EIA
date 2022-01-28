@@ -1,6 +1,7 @@
 <template>
   <div class="fbdocument">
     <div class="subDetail">
+      <!--
         <div class="itemTitle" >
             Send Your Feedback
         </div>
@@ -10,12 +11,15 @@
             <div class="commentTitle">Environmental-related Comments</div>
             <div class="commentLink"><a href="https://www.epd.gov.hk/eia/english/alpha/aspd_766.html" target="_blank">Link to Public Comment Form (Environmental Impact Assessment Ordinance Website)</a></div>
           </div>
+        -->
+          <!--
           <div class="commentItem">
             <div class="commentImg"><img src="img/fb02.png" alt="" width="300px" /></div>
             <div class="commentTitle">General Comments</div>
             <div class="commentLink"><a href="https://forms.office.com/r/79e5xbR3mx" target="_blank" >Link to Tung Chung Line Extension Virtual Information Centre</a></div>
           </div>
-        </div>
+          
+        </div>-->
     </div>
   </div>
 </template>

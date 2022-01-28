@@ -1,8 +1,10 @@
 <template>
   <div class="pageMenu">
+    <!--
     <div class="logo">
       <img src="img/mtr-dew-logo.png" />
     </div>
+    -->
     <div class="menu">
       <div
         class="menuItem"
@@ -65,13 +67,13 @@ export default {
           path: "help",
           style: "background-color: #D76663; cursor: pointer"
         },
-        {
+        //{
           //icon: "ios-alert-outline",
-          icon: "img/menu_icons/mnFeedback.png",
-          text: "Feedback",
-          path: "feedback",
-          style: "background-color: #D9BD7D; cursor: pointer"
-        },
+        //  icon: "img/menu_icons/mnFeedback.png",
+        //  text: "Feedback",
+        //  path: "feedback",
+        //  style: "background-color: #D9BD7D; cursor: pointer"
+        //},
       ],
     };
   },

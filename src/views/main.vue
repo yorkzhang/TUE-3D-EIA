@@ -34,6 +34,7 @@
       @click="toogleDataInfo"
     ></Button> -->
     <div class="content">
+      
       <div
         class="subMenu"
         v-if="
@@ -45,6 +46,7 @@
       >
         <router-view />
       </div>
+      
       <div v-else>
         <router-view />
       </div>
@@ -183,6 +185,24 @@
     </div>
     <div id="itemDetail2">
     </div>
+    <!-- <div id="arupLogo">
+     <img src="img/Arup_logo_red.png" width="150px" />
+    </div> -->
+    <div class="disclaimerBG" style="width:620px; height:430px;" v-if="desclaimerAccepted == false">
+      <div class="disclaimerBox" style="width:620px; height:430px;">
+        <br />
+        <h2><u>Disclaimer</u></h2>
+        <br />
+        <ol type="1">
+          <li style="text-align: justify;">The information provided on this website is for reference only. Please refer to the Environmental Impact Assessment (EIA) Report for more details, assumptions and assessment results.</li>
+          <li style="text-align: justify;">The information and content of this website is provided ‘as is’ and users shall rely on it as their own risk. No commercial use of the content is permitted. To the fullest extent permitted by law, we exclude any and all liability to users for their use or reliance on the content of this website.</li>
+        </ol>
+        <br />
+        <div class="buttonDescLeft" @click="AcceptDesclaimer">Accept</div>
+        <div class="buttonDescRight" @click="DeclineDesclaimer">Decline</div>
+        <br />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -202,7 +222,8 @@ export default {
       showLegend: true,
       showDataInfo: true,
       speciesCategoryConfigJson: speciesCategoryConfigJson,
-      legendTUE: legendTUEJson
+      legendTUE: legendTUEJson,
+      desclaimerAccepted: false
     };
   },
   computed: {
@@ -275,6 +296,16 @@ export default {
     toogleDataInfo() {
       this.showDataInfo = !this.showDataInfo;
     },
+    AcceptDesclaimer()
+    {
+      //alert("accept");
+      this.desclaimerAccepted = true;
+    },
+    DeclineDesclaimer()
+    {
+      //alert("decline");
+      window.location.replace("https://www.epd.gov.hk/eia/english/alpha/aspd_766.html");
+    }
   },
   components: { pageTitle, pageMenu },
   mounted() {
@@ -447,6 +478,58 @@ export default {
     color: #fff;
     background-color: #444966;
     border-color: #444966;
+  }
+  .disclaimerBG {
+    background-color: rgba(255,255,255,0);
+    display: box;
+    position: fixed;
+    z-index:  5;
+    top: 0px;
+    left: 0px;
+    width: calc(~"100vw");
+    height: calc(~"100vh");
+    .disclaimerBox {
+      background-color: rgba(255,255,255,0.5);
+      display: box;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      color: black;
+      width: 600px;
+      height: 370px;
+      border-radius: 20px;
+      font-size: 20px;
+      padding-left: 50px;
+      padding-right: 20px;
+      .buttonDescLeft {
+        float: left;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        background-color: rgb(130,130,130);
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      .buttonDescRight {
+        float: right;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        background-color: rgb(130,130,130);
+        vertical-align: middle;
+        cursor: pointer;
+      }
+    }
+  }
+  #arupLogo {
+    position: absolute;
+    right: 20px;
+    bottom : 10px;
+    img {
+      opacity: 0.5;
+    }
   }
 }
 @media (max-width: 1200px) {

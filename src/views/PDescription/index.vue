@@ -1,6 +1,6 @@
 <template>
     <div class="subDetail"> 
-        <div class="subDetailContent" style="overflow:auto;">
+        <div class="subDetailContent" style="overflow:auto; height: calc(100vh - 270px);">
             <div class="submenuTooltip scrollable" @click="closeSubMenu()"></div>
             <div class="subItem scrollable" :style="lightColor" >
                 <div class="subTitle marginBottom10">Stations of Tung Chung Line Extension</div>
@@ -128,9 +128,10 @@
             </div> --> 
         </div>
         <!--<div class="subNotification">-->
-        <div class="subNotification" align="justify" style=" font-size:100%;" >
+        <div class="subNotification" align="justify" style="height: 300px; font-size:100%;" >
             Note: <br>
-            The transparent buildings illustrated are planned developments which are indicative only and subject to change.
+            •The information provided on this website is for reference only. Please refer to the Environmental Impact Assesssment (EIA) Report for more details, assumptions and assessment results.<br>
+            •The transparent buildings illustrated are planned developments which are indicative only and subject to change.
         </div>
         
     </div>
