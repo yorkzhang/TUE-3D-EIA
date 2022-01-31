@@ -188,14 +188,15 @@
     <!-- <div id="arupLogo">
      <img src="img/Arup_logo_red.png" width="150px" />
     </div> -->
-    <div class="disclaimerBG" style="width:620px; height:430px;" v-if="desclaimerAccepted == false">
-      <div class="disclaimerBox" style="width:620px; height:430px;">
+    <div class="disclaimerBG" style="width:620px; height:500px;" v-if="desclaimerAccepted == false">
+      <div class="disclaimerBox" style="width:620px; height:500px;">
         <br />
         <h2><u>Disclaimer</u></h2>
         <br />
         <ol type="1">
           <li style="text-align: justify;">The information provided on this website is for reference only. Please refer to the Environmental Impact Assessment (EIA) Report for more details, assumptions and assessment results.</li>
           <li style="text-align: justify;">The information and content of this website is provided ‘as is’ and users shall rely on it as their own risk. No commercial use of the content is permitted. To the fullest extent permitted by law, we exclude any and all liability to users for their use or reliance on the content of this website.</li>
+          <li style="text-align: justify;">For the best browsing experience, we suggest to use Google Chrome as the browser.</li>
         </ol>
         <br />
         <div class="buttonDescLeft" @click="AcceptDesclaimer">Accept</div>

@@ -1,10 +1,10 @@
 <template>
   <div class="pageMenu">
-    <!--
+    
     <div class="logo">
-      <img src="img/mtr-dew-logo.png" />
+      <!--<img src="img/mtr-dew-logo.png" />-->
     </div>
-    -->
+    
     <div class="menu">
       <div
         class="menuItem"
@@ -132,9 +132,11 @@ export default {
   height: calc(100vh);
   background-color: @menu_bj;
   .logo {
-    background-color: #F3F3F3;
+    //background-color: #F3F3F3;
+    background-color: #2D3849;
     padding-top: 12px;
-    padding-bottom: 8px;
+    //padding-bottom: 8px;
+    padding-bottom: 48px;
     img {
       width: 120px;
       height: auto;

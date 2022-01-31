@@ -148,7 +148,7 @@ cesiumMap.initCesium = function () {
   //load buildings and 3dtiles 
   add3dTiles(viewer, 'tiles/hk1/texture/tileset.json', 0.8, "#ffffff", 1, false);
   add3dTiles(viewer, 'tiles/hk1/notexture/tileset.json', 0.4, "#ffffff", 1, false);
-
+  
 
   /* No Use - outdated 3dtiles
   add3dTiles(viewer, 'tiles/area58/tileset.json', 0.2, "#000000", 0.3, false);
@@ -174,6 +174,7 @@ cesiumMap.initCesium = function () {
   add3dTiles(viewer, 'tiles/3dtiles/TCE_v2_NoBarrier_v2/tileset.json', 0.15, "", 1, false);
   
   add3dTiles(viewer, 'tiles/3dtiles/CEDD_TCNTE/tileset.json', 0.4, "#ffffff", 0.5, false);
+  add3dTiles(viewer, 'tiles/3dtiles/TEC_MB_v2/tileset.json', 0.4, "#ffffff", 0.5, false);
 
   add3dTiles(viewer, 'tiles/3dtiles/TCE_v2_Barrier/tileset.json', 0.15, "", 1, true);
 
