@@ -2,7 +2,7 @@
   <div class="pageTitle">
     <div class="title">Tung Chung Line Extension Environmental Impact Assessment</div>
     <div class="title_mobile">
-      <div class="title_mobile_logo"><img src="img/mtr_logo_mobile.png" /></div>
+      <!--<div class="title_mobile_logo"><img src="img/mtr_logo_mobile.png" /></div>-->
       <div class="title_mobile_title">Tung Chung Line Extension EIA</div>
     </div>
     <div class="titleRight">
@@ -81,7 +81,8 @@ export default {
 @import "@/my-theme/config.less";
 .pageTitle {
   height: 60px;
-  width: @content_width;
+  //width: @content_width;
+  width: 100vw;
   color: #fff;
   display: flex;
   align-items: center;

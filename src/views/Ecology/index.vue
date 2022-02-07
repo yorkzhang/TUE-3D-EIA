@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="subDetail">The function is not open yet</div> -->
   <div class="subDetail">  
-    <div class="subDetailContent" style="height: calc(100vh - 270px);"> 
+    <div class="subDetailContent" style="height: calc(100vh - 190px);"> 
       <div class="submenuTooltip" @click="closeSubMenu()"></div>
       <div class="subItem" :style="lightColor">
         <div class="subTitle marginBottom10" @click="openSub1" style="cursor: pointer;">Ecological Baseline & Survey Infomation</div>
@@ -133,7 +133,7 @@
         </Button>
       </div>-->
     </div>
-     <div class="subNotification" align="justify" style="height: 300px; font-size:100%;" >
+     <div class="subNotification" align="justify" style="height: 110px; font-size:10px;" >
             Note: <br>
             •The information provided on this website is for reference only. Please refer to the Environmental Impact Assesssment (EIA) Report for more details, assumptions and assessment results.<br>
             •The transparent buildings illustrated are planned developments which are indicative only and subject to change.
