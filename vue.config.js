@@ -3,7 +3,7 @@ const { findSegment } = require("@turf/turf");
 module.exports = {
     devServer: {
         disableHostCheck: true,
-        public: 'tue_mtrc_oap01.groture.com',
+        public: 'hkgdt4ce92511k7',
         https: false,
     },
 }

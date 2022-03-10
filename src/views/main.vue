@@ -305,7 +305,7 @@ export default {
     DeclineDesclaimer()
     {
       //alert("decline");
-      window.location.replace("https://www.epd.gov.hk/eia/english/alpha/aspd_766.html");
+      window.location.replace("https://www.google.com/");
     }
   },
   components: { pageTitle, pageMenu },

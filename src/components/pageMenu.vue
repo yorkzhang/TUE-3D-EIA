@@ -96,7 +96,7 @@ export default {
     },
     checkMenu(path) {
       if (path ==="help") {
-        window.open("https://www.epd.gov.hk/eia/english/alpha/aspd_766.html","_blank").focus();
+        window.open("https://www.epd.gov.hk/eia/english/register/open/all.html","_blank").focus();
       } else if (this.activeMenu === path) {
         this.$store.commit("updateShowSubMenu", !this.$store.state.showSubMenu);
       } else {
